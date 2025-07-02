@@ -1147,3 +1147,26 @@ carousel.addEventListener("touchend", () => {
   }
 
 
+
+//   popup form ------------------------
+
+  const popupForm = document.getElementById('popupForm');
+  const openFormBtn = document.getElementById('openFormBtn');
+  let hasOpened = false;
+
+  const formModal = new bootstrap.Modal(popupForm);
+
+  // Manual open
+  openFormBtn.addEventListener('click', function () {
+    hasOpened = true;
+    formModal.show();
+  });
+
+  // Auto-show the popup after 10 seconds, only if not opened manually
+  window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+      if (!hasOpened) {
+        formModal.show();
+      }
+    }, 10000); // 10 seconds
+  });
