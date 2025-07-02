@@ -1404,6 +1404,7 @@ a:hover .tooltip {
     min-width: auto;
     width: 100%;
     overflow: hidden;
+    margin-top: -20px;
 }
 
 .sub-menu-wrap.mega-menu .mega-submenu {
