@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           <li><a href="#">BIS Scheme-X Certification</a></li>
                           <li><a href="#">TEC/MTCTE Approval</a></li>
                           <li><a href="#">TAC & IMEI Registration</a></li>
-                          <li><a href="#">Legal Metrology (LMPC)</a></li>
+                          <li><a href="#">Legal Metrology (LMPC) Registration</a></li>
                         </ul>
                       </div>
                       <div class="mega-submenu">
