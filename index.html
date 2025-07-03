@@ -592,7 +592,7 @@
           <div class="col-lg-6" data-aos="fade-right">
             <div class="finix-text">
               <h6>SS Global Services</h6>
-              <h2>Why people choose us</h2>
+              <h2>Why people choose us?</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/why_choose_us.png" alt="">
               <div class="ct-btn">
@@ -829,7 +829,7 @@
 
                                     <div class="form-col">                                       
                                         <select class="form-select" id="select-form1" name="services" required>
-  <option value="" disabled selected>Select Service</option>
+  <option value="" disabled selected>Select Service  *</option>
   <option value="1">BEE Registration</option>
   <option value="2">BIS (CRS) Registration For Electronic Product</option>
   <option value="3">EPR Registration for E-Waste</option>
@@ -847,7 +847,7 @@
 </div>
 
                                     <div class="form-col">
-                                        <textarea name="cf-message" placeholder="How Can We Help You?" required></textarea>
+                                        <textarea name="cf-message" placeholder="How Can We Help You?  *" required></textarea>
                                     </div>
 
                                     <div class="form-col">
@@ -1696,19 +1696,19 @@
             <form action="">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Name" required>
+                  <input type="text" class="form-control" name="name" placeholder="Name" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                  <input type="tel" class="form-control" name="phone" placeholder="Phone No." required>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Country" required>
+                  <input type="text" class="form-control" name="country" placeholder="Country" required>
                 </div>
                 <div class="col-md-12">
-                  <select class="form-select" required>
+                  <select class="form-select" name="services" required>
                     <option value="" disabled selected>Select Service</option>
    <option value="1">BEE Registration</option>
   <option value="2">BIS (CRS) Registration For Electronic Product</option>
@@ -1726,7 +1726,7 @@
                   </select>
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" rows="3" placeholder="How we can help you?" required></textarea>
+                  <textarea class="form-control" rows="3" placeholder="How we can help you?" name="message" required></textarea>
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-4">
