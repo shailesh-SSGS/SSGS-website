@@ -2318,7 +2318,7 @@ button.search-button:before {
 /*----------- Buttons --------------*/
 
 .btn {
-    font-family: 'Oswald', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px 30px;
     display: inline-block;
     font-size: 16px;
@@ -2522,7 +2522,7 @@ form.with-icon input+button:hover {
 
 input:not([type="submit"]),
 textarea,
-.custom-select .select-title {
+.custom-select .select-title, #popupForm .form-select {
     width: 100%;
     color: #777;
     border-radius: 3px;
@@ -2885,12 +2885,10 @@ fieldset:not(:last-child) {
 }
 #select-form1{
     border-color: #fff;
-    /* background: #fff; */
     color: #777;
     font-weight: 300;
     height: 44px;
 }
-
 .form-wrap.style-2 .custom-select .select-list {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -4332,7 +4330,7 @@ color: #ffffff;
     margin: auto;
 }
 .icons-box.icons-bg .icons-wrap:nth-child(1) .item-box {
-    background: #e9e9e9;
+    background: #e6f7ff;
     border-right: 2px solid white;
 
 }
@@ -4343,12 +4341,12 @@ color: #ffffff;
 }
 
 .icons-box.icons-bg .icons-wrap:nth-child(3) .item-box {
-    background: #e9e9e9;
+    background: #ffffff;
     border-right: 2px solid white;
 }
 
 .icons-box.icons-bg .icons-wrap:nth-child(4) .item-box {
-    background: #e9e9e9;
+    background: #e6f7ff;
     border-right: 2px solid white;
 
 }
@@ -8594,28 +8592,43 @@ width: 45%;
       transform: translateY(0);
       opacity: 1;
     }
+   #popupForm input:not([type="submit"]),#popupForm textarea, #popupForm .form-select, #popupForm .form-control {
+      border-radius: 0.375rem; 
+      padding: .375rem .75rem;
+      border: 2px solid #dee2e6 !important;
+    }
+    #popupForm .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
     #popupForm .form-control:focus,
     #popupForm .form-select:focus {
-      border-color: #1bb1f8;
+      border: 1px solid #1bb1f8 !important;
       box-shadow: 0 0 0 0.2rem rgba(27, 177, 248, 0.25);
     }
     #popupForm .btn-submit {
       background-color: #004e79;
       color: white;
+      padding: 0.375rem 0.75rem;
+      text-transform: capitalize;
       transition: all 0.3s ease;
     }
+  
     #popupForm .btn-submit:hover {
       background-color: #1bb1f8;
       color: #fff;
       transform: scale(1.05);
     }
     #popupForm .form-image {
-      background: url('../images') center center/cover no-repeat;
+      background: url('../images/Girl-hand-pointing.png') center center/cover no-repeat;
       min-height: 100%;
     }
     #popupForm .modal-title {
-      font-weight: bold;
+      font-weight: 600;
       color: #004e79;
+      padding: 0.375rem 1rem;
+      margin: 0;
+      font-size: 20px;
     }
     #popupForm .form-label {
       font-weight: 500;

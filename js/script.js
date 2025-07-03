@@ -1154,7 +1154,10 @@ carousel.addEventListener("touchend", () => {
   const openFormBtn = document.getElementById('openFormBtn');
   let hasOpened = false;
 
-  const formModal = new bootstrap.Modal(popupForm);
+   const formModal = new bootstrap.Modal(popupForm, {
+    backdrop: 'static',
+    keyboard: false
+  });
 
   // Manual open
   openFormBtn.addEventListener('click', function () {
