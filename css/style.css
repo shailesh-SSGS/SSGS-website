@@ -899,22 +899,7 @@ a:hover .tooltip {
  .contact-info li a:hover{
     color: #004e79 ;
 }
-  /* .contact-info li a i, .social-icons li a i{
-    color: #1bb1f8 ;
-    background: #fff;
-    border-radius: 50%;
-    padding: 2px 2px 2px 5px;
-    margin-right: 5px !important;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-} */
-/* .social-icons li a i{
-    color: #1bb1f8  !important;
-    padding: 4px;
-    font-size: 12px;
-} */
+
  .contact-info li a i:hover, .social-icons li a i:hover{
     color: #004e79 ;
 }
@@ -923,7 +908,9 @@ a:hover .tooltip {
 .contact-info li a i, .social-icons li a i{
 
     margin-right: 0px !important;
-
+}
+.pre-header{
+    display: none;
 }
 } 
 .header .pre-header p:not(:last-child) {
@@ -8439,7 +8426,7 @@ width: 45%;
 
     .sticky-icons {
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   left: 30px;
   display: flex;
   flex-direction: column;
@@ -8480,7 +8467,7 @@ width: 45%;
 }
 
   @media (max-width: 500px) {
-   .sticky-icons .call, .sticky-icons .email{
+.sticky-icons .email{
     display: none;
    }
 }

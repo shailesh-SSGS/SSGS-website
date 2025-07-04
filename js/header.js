@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container">
           <div class="flex-row flex-justify">
             <ul class="contact-info">
-              <li><a href="tel:+91-9560935898"><i class="icon-phone pr-4"> </i> +91-9999992605</a></li>
-              <li><a href="tel:+91-9718430644"><i class="icon-phone"> </i> +91-9718430644</a></li>
+              <li><a href="tel:+91-9999992605"><i class="icon-phone pr-4"> </i> +91-9999992605</a></li>
+              <li><a href="tel:+91-9717929681"><i class="icon-phone"> </i> +91-9717929681</a></li>
               <li><a href="tel:011-40194697"><i class="icon-phone"> </i> 011-40194697</a></li>
               <li><a href="mailto:contact@ssglobalservices.com"><i class="icon-email"> </i> info@ssglobalservices.in</a></li>
             </ul>
