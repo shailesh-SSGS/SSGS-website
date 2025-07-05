@@ -4293,6 +4293,7 @@ p+hr.item-divider-3 {
 
 .icons-wrap{
     box-shadow: 0 6px 10px 1px rgb(0 0 0 / 25%);
+
     margin: 0 .3%;
     /* z-index: -1; */
 }
@@ -8624,4 +8625,90 @@ width: 45%;
       #popupForm .form-image {
         display: none;
       }
+    }
+
+
+
+    /* internationa audit page 
+    ======================================== */
+
+    .audit-section .audit-entry{
+        margin: 2.5rem 0;
+    }
+    .audit-section .audit-card {
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    .audit-section .audit-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      transform: translateY(-9px);
+    }
+
+    .audit-section .audit-card img {
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .audit-section .country-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #004e79;
+    }
+
+    .audit-section .read-more {
+      font-weight: 600;
+      color: #1bb1f8;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      /* text-decoration: underline; */
+    }
+
+    .audit-section .search-wrapper {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    .audit-section .search-wrapper input {
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 2px solid #ced4da !important;
+      font-size: 1rem;
+    }
+    .audit-section .search-wrapper input:focus{
+      border: 2px solid #1bb1f8 !important;
+    }
+    #modal-contents .modal-content {
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+
+   #modal-contents  .modal-header {
+      background: rgb(230, 247, 255);
+      border-bottom: 1px solid #dee2e6;
+    }
+ #modal-contents .modal-header .modal-title{
+    color: #004e79;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+    #modal-contents .modal-body img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    #modal-contents .modal-dialog {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
     }
