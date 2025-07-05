@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <ul>
                         <li><a href="gallery.html">Image Gallery</a></li>
                         <li><a href="#">Video Gallery</a></li>
-                        <li><a href="#">International Audit</a></li>
+                        <li><a href="international-audit.html">International Audit</a></li>
                       </ul>
                     </div>
                   </li>
