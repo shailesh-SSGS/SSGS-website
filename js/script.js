@@ -1173,3 +1173,14 @@ carousel.addEventListener("touchend", () => {
       }
     }, 10000); // 10 seconds
   });
+
+
+  
+  // Set the current year in the footer===============================
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("copyright-year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  });
+
