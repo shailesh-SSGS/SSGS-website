@@ -7884,6 +7884,14 @@ padding: 30px;
 .why-choose-us {
   margin: 90px 0;
 }
+.why-choose-us img{
+    margin-left: -40px;
+}
+@media only screen and (max-width: 991px){
+.why-choose-us img{
+    margin-left: 0px;
+}
+}
 .why-choose-us .finix-text h2 {
   font-weight: 600;
 }
