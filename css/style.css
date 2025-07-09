@@ -2480,6 +2480,8 @@ button.search-button:before {
     content: '»';
 }
 
+ 
+
 /*----------- Forms --------------*/
 
 form {
@@ -7497,6 +7499,7 @@ iframe::scrollbar {
 .update-news span{
     font-weight: bold;
     margin-right: 10px;
+    /* color: #004e79; */
 }
     .new-icon {
       width: 24px;
@@ -8800,3 +8803,6 @@ width: 45%;
       align-items: center;
       min-height: 100vh;
     }
+
+
+
