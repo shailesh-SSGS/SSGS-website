@@ -4312,10 +4312,18 @@ color: #ffffff;
 #service-box-5:hover .icons-item .item-box h3 a{
 color: #ffffff;
 }
-#service-box-1 img, #service-box-2 img, #service-box-3 img,  #service-box-4 img,  #service-box-5 img {
-    width: 60px;
-
-    margin: auto;
+ #service-box-2 img, #service-box-3 img,  #service-box-4 img,  #service-box-5 img {
+    width: 80px;
+    margin: 0 35px -15px 35px;
+}
+#service-box-1 img{
+   width: 90px;
+    margin: 0 35px -25px 35px;
+}
+.icons-box.style-2.type-2:hover #service-box-1 img, .icons-box.style-2.type-2:hover #service-box-2 img, .icons-box.style-2.type-2:hover #service-box-3 img, .icons-box.style-2.type-2:hover #service-box-4 img, .icons-box.style-2.type-2:hover #service-box-5 img{
+   background: #ffffff;
+   border-radius: 50px;
+   margin: 20px 35px 0 35px;
 }
 .icons-box.icons-bg .icons-wrap:nth-child(1) .item-box {
     background: #e6f7ff;
@@ -4580,7 +4588,7 @@ color: #ffffff;
 
 .icons-box.style-2.type-2 .item-box {
     color: #fff;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     height: 100%;
     transition: all .6s ease;
     -moz-transform: translateY(50%);
@@ -7476,13 +7484,20 @@ iframe::scrollbar {
       align-items: center;
       text-decoration: none;
       color: rgb(14, 13, 13);
-      padding: 0 2rem;
+      
     }
 
     .ticker a:hover {
       color: #1bb1f8;
     }
-
+.update-news{
+    display: flex;
+    padding: 0 2rem;
+}
+.update-news span{
+    font-weight: bold;
+    margin-right: 10px;
+}
     .new-icon {
       width: 24px;
       height: 24px;
@@ -7491,7 +7506,7 @@ iframe::scrollbar {
 
     @keyframes ticker {
       0% {
-        transform: translateX(100%);
+        transform: translateX(50%);
       }
       100% {
         transform: translateX(-100%);
