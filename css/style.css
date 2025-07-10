@@ -2339,8 +2339,12 @@ button.search-button:before {
 }
 
 [class*="btn"].btn-style-2 {
-    background: #004e79;
+    background: #004e79; 
     color: #fff;
+    transition: all .3s ease;
+}
+[class*="btn"].btn-style-2:hover {
+    background: linear-gradient(to right, #004e79 0%, #1bb1f8 100%) !important;
 }
 
 [class*="btn"].btn-style-3 {
@@ -4299,33 +4303,21 @@ p+hr.item-divider-3 {
     margin: 0 .3%;
     /* z-index: -1; */
 }
-#service-box-1:hover .icons-item .item-box h3 a{
-color: #ffffff;
+#service-box-1:hover .icons-item .item-box h3 a, #service-box-2:hover .icons-item .item-box h3 a, #service-box-3:hover .icons-item .item-box h3 a, #service-box-4:hover .icons-item .item-box h3 a,#service-box-5:hover .icons-item .item-box h3 a {
+color: #ffd000;
 }
-#service-box-2:hover .icons-item .item-box h3 a{
-color: #ffffff;
+
+ #service-box-1 img, #service-box-2 img, #service-box-3 img,  #service-box-4 img,  #service-box-5 img {
+    width: 60px;
+    margin: 10px 0px -10px 50px;
 }
-#service-box-3:hover .icons-item .item-box h3 a{
-color: #ffffff;
-}
-#service-box-4:hover .icons-item .item-box h3 a{
-color: #ffffff;
-}
-#service-box-5:hover .icons-item .item-box h3 a{
-color: #ffffff;
-}
- #service-box-2 img, #service-box-3 img,  #service-box-4 img,  #service-box-5 img {
-    width: 80px;
-    margin: 0 35px -15px 35px;
-}
-#service-box-1 img{
+/* #service-box-1 img{
    width: 90px;
     margin: 0 35px -25px 35px;
-}
-.icons-box.style-2.type-2:hover #service-box-1 img, .icons-box.style-2.type-2:hover #service-box-2 img, .icons-box.style-2.type-2:hover #service-box-3 img, .icons-box.style-2.type-2:hover #service-box-4 img, .icons-box.style-2.type-2:hover #service-box-5 img{
+} */
+#service-box-1:hover img, #service-box-2:hover img, #service-box-3:hover img, #service-box-4:hover img,  #service-box-5:hover img{
    background: #ffffff;
    border-radius: 50px;
-   margin: 20px 35px 0 35px;
 }
 .icons-box.icons-bg .icons-wrap:nth-child(1) .item-box {
     background: #e6f7ff;
@@ -4480,7 +4472,7 @@ color: #ffffff;
 }
 
 .icons-box.style-2 .icons-box-title a {
-    color: #004e79;
+    color: #004e79; 
     font-weight: normal;
     letter-spacing: 0.3px;
 }
@@ -4639,6 +4631,8 @@ color: #ffffff;
 
 .icons-box.style-2.type-2 .item-box .icons-box-title:not(:last-child) {
     margin-bottom: 0;
+    margin-top: 1rem;
+    line-height: 1rem;
 }
 
 .icons-box.style-2.type-2 .item-box p {
@@ -7312,14 +7306,41 @@ iframe::scrollbar {
     background-attachment: fixed;
     background-position: center center;
 }
+.bottom-footer{
+    padding: 20px 0;
+    background: #004e795c;
+    margin-top: 70px ;
+}
 
-.footer .copyright {
-    text-align: center;
-    padding: 70px 0 60px;
+.bottom-footer .copyright {
+    text-align: left;
     font-size: 14px;
     letter-spacing: 0.5px;
 }
+.bottom-footer .privacy-policy{
+    text-align: right;
+}
+.bottom-footer a{
+color: #babcbe;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+.bottom-footer a:hover{
+color: #ffdb3e;  
+}
 
+@media only screen and (max-width: 767px) {
+   .bottom-footer .privacy-policy{
+    text-align: center;
+}
+   .bottom-footer .copyright{
+    text-align: center;
+}
+.bottom-footer .copyright{
+    margin-bottom: 1.5rem !important;
+
+}
+}
 [class*="footer"] .widget {
     padding: 0;
     background: transparent;
@@ -7349,6 +7370,13 @@ iframe::scrollbar {
 [class*="footer"] .brend-box>* {
     margin: 0 10px 10px;
     display: inline-block;
+}
+
+[class*="footer"] .brend-box img {
+   width: 70px;
+   background: #ffffff;
+   border-radius: 10px;
+   padding: 0 10px;
 }
 
 /* ----------------- Footer style-2 ---------------- */
@@ -7689,13 +7717,8 @@ iframe::scrollbar {
 =========================================================== */
 
 .counter-section {
-    /* background-image: url("../images/bg-blue.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
+ 
       padding: 80px 0;
-      /* background-color: #004e79; */
       text-align: center;
     }
     .counter-section h2{
@@ -7705,13 +7728,16 @@ iframe::scrollbar {
       padding: 30px;
       background: #ffffff;
       border-radius: 10px;
-      transition: 0.4s ease;
+      transition: all 0.4s ease;
       box-shadow: 0 6px 10px -1px rgb(0 0 0 / 25%) ;
+      /* transition: background-color 0.4s ease-in; */
+
     }
     .counter-box:hover {
       transform: translateY(-8px);
       /* box-shadow: 0 2px 10px #1bb1f8; */
       background: linear-gradient(to right, #004e79 0%, #1bb1f8 100%);
+
     }
     .counter-box i{
         font-size: 40px;

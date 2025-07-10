@@ -1,813 +1,1097 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Google Web Fonts
+  <head>
+    <!-- Google Web Fonts
   ================================================== -->
 
-<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900%7COswald:200,300,400,500,600,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900%7COswald:200,300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
 
-<title>SS Global Services</title>
+    <title>SS Global Services</title>
 
-<!--meta info-->
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="keywords" content="">
-<meta name="description" content="">
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
-<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<!-- bootstrap css 
+    <!-- bootstrap css 
  =========================================== -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
 
-
-<!-- Vendor CSS
+    <!-- Vendor CSS
   ============================================ -->
 
-<link rel="stylesheet" href="font/demo-files/demo.css">
-<link rel="stylesheet" href="font/custom/styles.css">
-<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
-<link rel="stylesheet" href="plugins/revolution/css/settings.css">
-<link rel="stylesheet" href="plugins/revolution/css/layers.css">
-<link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+    <link rel="stylesheet" href="font/demo-files/demo.css" />
+    <link rel="stylesheet" href="font/custom/styles.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
 
-<!-- CSS theme files
+    <!-- CSS theme files
   ============================================ -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/fontello.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-<!-- Animation Link ----------------------- -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animation Link ----------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<!-- Font Awesome 
+    <!-- Font Awesome 
  ======================= -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> 
-<!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  
-
-
+  <body>
     <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
 
     <div id="wrapper" class="wrapper-container">
+      <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
+      <nav id="mobile-advanced" class="mobile-advanced"></nav>
 
-        <nav id="mobile-advanced" class="mobile-advanced"></nav>
+      <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+      <!-- Header.js Tag ---------- -->
+      <div id="header-container"></div>
 
-         <!-- Header.js Tag ---------- -->
-<div id="header-container"></div>
-       
+      <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
-
-<!-- Notification Section Start 
+      <!-- Notification Section Start 
  ======================================================================-->
 
-<div class="container-fliud">
-    <div class="row">
-   <div class="col-2 text-white text-center events">
-        <i class="icon-bell blinking-bell"> </i><span class="news-ticker-title newsoff"> Latest Notifications</span>
-        </div>
-<div class="col-10 p-0 font-opensans ticker-container">
-<div class="ticker-wrapper">
-  <div class="ticker" id="newsTicker">
-    
-    <div class="update-news">
-      <span> BIS Update:</span><a href="#" target="_blank">BIS Certification Updated for Electronics – July 2025
-      <img class="new-icon" src="images/new-icon-gif.gif" alt="New" />
-    </a>
-      </div>
-
-        <div class="update-news">
-      <span> EPR Update:</span><a href="#" target="_blank">EPR Battery Deadline Extended to 31st July 2025
-      <img class="new-icon" src="images/new-icon-gif.gif" alt="New" />
-    </a>
-    </div>
-
-  <div class="update-news">
-      <span> WPC Update:</span><a href="#" target="_blank">WPC Approval Now Must for IoT Devices
-      <img class="new-icon" src="images/new-icon-gif.gif" alt="New" />
-    </a>
-    </div>
-
-  <div class="update-news">
-      <span> BEE Update:</span><a href="#" target="_blank">BEE Labeling Mandatory for More Products
-      <img class="new-icon" src="images/new-icon-gif.gif" alt="New" />
-    </a>
-    </div>
-
-  <div class="update-news">
-      <span> BIS Scheme-X:</span><a href="#" target="_blank">New Rules for BIS Scheme-X Certification
-      <img class="new-icon" src="images/new-icon-gif.gif" alt="New" />
-    </a>
-</div>
-
-  </div>
-</div>
-</div>
-</div>
-</div>
-        <!-- - - - - - - - - - - - - - Revolution Slider - - - - - - - - - - - - - - - - -->
-
-
-
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" style="z-index: 1;">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/BIS-CRS-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/BEE-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/TEC-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/WPC-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/LMPC-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/BIS-X-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/EPR-E-WASTE-certification-slider.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
- 
-
-        <!-- - - - - - - - - - - - - - Revolution Slider End - - - - - - - - - - - - - - - - -->
-
-
-<div id="calc-item" class="icons-box icons-bg style-2 type-2">
-
-                <div class="flex-row fx-col-5">
-
-                    <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
-                    <div class="icons-wrap" id="service-box-1">
-
-                        <div class="icons-item">
-                            <div class="item-box">                          
-                                <img src="images/BIS-certification-logo.png" alt="">
-                                <h3 class="icons-box-title"><a href="#">BIS Certification</a></h3>
-                                <p>Mandatory for quality, safety, and regulatory compliance of products sold in Indian markets. </p>
-                                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
-                    <div class="icons-wrap" id="service-box-2">
-
-                        <div class="icons-item">
-                            <div class="item-box">
-                                <img src="images/BEE-certification-logo.png" alt="">
-                                <h3 class="icons-box-title"><a href="#">BEE Registration</a></h3>
-                                <p>Energy efficiency labeling required for specific appliances under BEE regulations in India. </p>
-                                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
-                    <div class="icons-wrap" id="service-box-3">
-
-                                                <div class="icons-item">
-                            <div class="item-box">
-                                <img src="images/EPR-certification-logo.png" alt="">
-                                <h3 class="icons-box-title"><a href="#">EPR Registration</a></h3>
-                                <p>Extended Producer Responsibility registration for e-waste, battery, tyre, and plastic waste.</p>
-                                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
-                    <div class="icons-wrap" id="service-box-4">
-
-                        <div class="icons-item">
-                            <div class="item-box">
-                                <img src="images/TEC-MTCTE-certification-logo.png" alt="">
-                                <h3 class="icons-box-title"><a href="#">TEC/MTCTE Approval</a></h3>
-                                <p>Mandatory telecom certification for network and communication devices in India</p>
-                                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
-                    <div class="icons-wrap" id="service-box-5">
-                   
-                          <div class="icons-item">
-                            <div class="item-box">
-                                <img src="images/WPC-certification-logo.png" alt="">
-                                <h3 class="icons-box-title"><a href="#">WPC-ETA Approval</a></h3>
-                                <p>Approval for wireless, RF, and Bluetooth-enabled products before sale in Indian market. </p>
-                                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-
+      <div class="container-fliud">
+        <div class="row">
+          <div class="col-2 text-white text-center events">
+            <i class="icon-bell blinking-bell"> </i
+            ><span class="news-ticker-title newsoff">
+              Latest Notifications</span
+            >
+          </div>
+          <div class="col-10 p-0 font-opensans ticker-container">
+            <div class="ticker-wrapper">
+              <div class="ticker" id="newsTicker">
+                <div class="update-news">
+                  <span> BIS:</span
+                  ><a href="#" target="_blank"
+                    >BIS Certification Updated for Electronics – July 2025
+                    <img
+                      class="new-icon"
+                      src="images/new-icon-gif.gif"
+                      alt="New"
+                    />
+                  </a>
                 </div>
 
+                <div class="update-news">
+                  <span> EPR:</span
+                  ><a href="#" target="_blank"
+                    >EPR Battery Deadline Extended to 31st July 2025
+                    <img
+                      class="new-icon"
+                      src="images/new-icon-gif.gif"
+                      alt="New"
+                    />
+                  </a>
+                </div>
+
+                <div class="update-news">
+                  <span> WPC:</span
+                  ><a href="#" target="_blank"
+                    >WPC Approval Now Must for IoT Devices
+                    <img
+                      class="new-icon"
+                      src="images/new-icon-gif.gif"
+                      alt="New"
+                    />
+                  </a>
+                </div>
+
+                <div class="update-news">
+                  <span> BEE:</span
+                  ><a href="#" target="_blank"
+                    >BEE Labeling Mandatory for More Products
+                    <img
+                      class="new-icon"
+                      src="images/new-icon-gif.gif"
+                      alt="New"
+                    />
+                  </a>
+                </div>
+
+                <div class="update-news">
+                  <span> BIS Scheme-X:</span
+                  ><a href="#" target="_blank"
+                    >New Rules for BIS Scheme-X Certification
+                    <img
+                      class="new-icon"
+                      src="images/new-icon-gif.gif"
+                      alt="New"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- - - - - - - - - - - - - - Revolution Slider - - - - - - - - - - - - - - - - -->
+
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+        style="z-index: 1"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/BIS-CRS-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/BEE-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/TEC-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/WPC-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/LMPC-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/BIS-X-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/EPR-E-WASTE-certification-slider.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- - - - - - - - - - - - - - Revolution Slider End - - - - - - - - - - - - - - - - -->
+
+      <div id="calc-item" class="icons-box icons-bg style-2 type-2">
+        <div class="flex-row fx-col-5">
+          <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
+          <div class="icons-wrap" id="service-box-1">
+            <div class="icons-item">
+              <div class="item-box">
+                <img src="images/BIS-certification-logo.png" alt="" />
+                <h3 class="icons-box-title">
+                  <a href="#">BIS Certification</a>
+                </h3>
+                <p>
+                  Mandatory for quality, safety, and regulatory compliance of
+                  products sold in Indian markets.
+                </p>
+                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
+          <div class="icons-wrap" id="service-box-2">
+            <div class="icons-item">
+              <div class="item-box">
+                <img src="images/BEE-certification-logo.png" alt="" />
+                <h3 class="icons-box-title">
+                  <a href="#">BEE Registration</a>
+                </h3>
+                <p>
+                  Energy efficiency labeling required for specific appliances
+                  under BEE regulations in India.
+                </p>
+                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
+          <div class="icons-wrap" id="service-box-3">
+            <div class="icons-item">
+              <div class="item-box">
+                <img src="images/EPR-certification-logo.png" alt="" />
+                <h3 class="icons-box-title">
+                  <a href="#">EPR Registration</a>
+                </h3>
+                <p>
+                  Extended Producer Responsibility registration for e-waste,
+                  battery, tyre, and plastic waste.
+                </p>
+                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
+          <div class="icons-wrap" id="service-box-4">
+            <div class="icons-item">
+              <div class="item-box">
+                <img src="images/TEC-MTCTE-certification-logo.png" alt="" />
+                <h3 class="icons-box-title">
+                  <a href="#">TEC/MTCTE Approval</a>
+                </h3>
+                <p>
+                  Mandatory telecom certification for network and communication
+                  devices in India
+                </p>
+                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- - - - - - - - - - - - - - Icon Box Item - - - - - - - - - - - - - - - - -->
+          <div class="icons-wrap" id="service-box-5">
+            <div class="icons-item">
+              <div class="item-box">
+                <img src="images/WPC-certification-logo.png" alt="" />
+                <h3 class="icons-box-title">
+                  <a href="#">WPC-ETA Approval</a>
+                </h3>
+                <p>
+                  Approval for wireless, RF, and Bluetooth-enabled products
+                  before sale in Indian market.
+                </p>
+                <a href="#" class="btn btn-small btn-style-5">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+
+      <div id="content">
+        <!-- About  section----------------------------------------- -->
+
+        <div class="page-section-bg4 type4 half-bg-col">
+          <div class="container extra-size2" data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-6 col-md-12" data-aos="fade-up">
+                <div class="fancy-heading-wrapper">
+                  <div class="fancy-heading">
+                    <h2>About Us</h2>
+                  </div>
+                </div>
+                <h1 class="section-title mt-4 mb-2">
+                  Leading Certification Consultants in India
+                </h1>
+                <div class="decor-line mb-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <p class="mb-4 text-justify blue">
+                  SS Global Services is a leading certification consultancy that
+                  provides complete solutions for BIS, BEE, EPR, WPC, TEC, and
+                  LMPC registrations. We help Indian and foreign manufacturers
+                  obtain fast, cost-effective, and hassle-free approvals for
+                  regulatory compliance.
+                </p>
+
+                <p class="mb-4 text-justify blue">
+                  Our expert team ensures accurate documentation, audit
+                  preparation, testing support, and end-to-end project
+                  management. With a focus on timely delivery and transparency,
+                  we serve startups to multinational clients across various
+                  industries.
+                </p>
+
+                <a href="about.html" class="btn btn-small">More About Us</a>
+              </div>
+              <div class="col-lg-6 col-md-12" data-aos="fade-up">
+                <div class="img" id="about-img">
+                  <img
+                    src="images/About us SS Global Services.gif"
+                    alt="Leading Certification Consultants in India - SS Global Services"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About section end -->
+
+        <!-- Services Section start-->
+        <!-- =============================== -->
+
+        <section class="py-5 bg-light" data-aos="fade-up" id="services-slider">
+          <div class="container text-center">
+            <div class="fancy-heading-wrapper">
+              <div class="fancy-heading">
+                <h5>What We Do</h5>
+              </div>
+            </div>
+            <h2 class="text-center section-title mb-2">Our Services</h2>
+            <div class="decor-line mb-2" id="center-title">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
 
+            <p class="py-3">
+              At SS Global Services, we offer a complete range of certification
+              and compliance services tailored to meet the needs of
+              manufacturers, importers, and brand owners. From BIS and BEE
+              certifications to EPR, WPC, TEC, and LMPC registrations, our
+              expert-led process ensures fast approvals, minimal delays, and
+              full legal compliance. Our top services are trusted by startups
+              and global enterprises alike for their accuracy, reliability, and
+              support at every step.
+            </p>
 
-
-
-        <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
-
-        <div id="content">
-
-            <!-- About  section----------------------------------------- -->
-
-            <div class="page-section-bg4 type4 half-bg-col">
-
-                
-
-                <div class="container extra-size2" data-aos="fade-up">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 " data-aos="fade-up">
-<div class="fancy-heading-wrapper">
-  <div class="fancy-heading">
-    <h2>About Us</h2>
-  </div>
-</div>
-                            <h1 class="section-title mt-4 mb-2">Leading Certification Consultants in India</h1>
-                             <div class="decor-line mb-4">
-                                     <span></span>
-                                     <span></span>
-                                     <span></span>
-                                   </div>
-
-                            <p class="mb-4 text-justify blue">SS Global Services is a leading certification consultancy that provides complete solutions for BIS, BEE, EPR, WPC, TEC, and LMPC registrations. We help Indian and foreign manufacturers obtain fast, cost-effective, and hassle-free approvals for regulatory compliance.</p> 
-
-                    <p class="mb-4 text-justify blue">Our expert team ensures accurate documentation, audit preparation, testing support, and end-to-end project management. With a focus on timely delivery and transparency, we serve startups to multinational clients across various industries.</p>
-
-                            <a href="about.html" class="btn btn-small">More About Us</a>
-
-                        </div>
-                        <div class="col-lg-6 col-md-12" data-aos="fade-up">
-                            <div class="img" id="about-img"><img src="images/About us SS Global Services.gif" alt="Leading Certification Consultants in India - SS Global Services">
-                </div>
-                        </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-container" id="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                  <!-- Card 1 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/bee-certification-services.jpg"
+                        alt="BEE Registration"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >BEE Registration</a
+                        >
+                        <p class="card-text">
+                          BEE registration for electrical appliances ensures
+                          energy efficiency compliance in Indian markets.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
                     </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/BIS-CRS-Certification-services.jpg"
+                        alt="BIS (CRS) Registration for Electronic Product"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >BIS (CRS) Registration for Electronic Product</a
+                        >
+                        <p class="card-text">
+                          Mandatory CRS registration for electronics under BIS
+                          ensures product safety and performance compliance.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/EPR-E-WASTE-Certification-services.jpg"
+                        alt="EPR Registration for E-Waste"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >EPR Registration for E-Waste</a
+                        >
+                        <p class="card-text">
+                          Register under CPCB's EPR policy to manage and dispose
+                          of e-waste responsibly and lawfully in India.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/EPR-PLASTIC-Certification-services.jpg"
+                        alt="EPR Registration for Plastic Waste"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >EPR Registration for Plastic Waste</a
+                        >
+                        <p class="card-text">
+                          Plastic waste certification under EPR ensures legal
+                          compliance for producers and brand owners in India.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/EPR-BATTERY-Certification-services.jpg"
+                        alt="EPR Registration for Battery Waste"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >EPR Registration for Battery Waste</a
+                        >
+                        <p class="card-text">
+                          Battery waste registration ensures safe handling,
+                          recycling, and regulatory compliance for all
+                          producers.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 6 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/EPR-TYRE-Certification-services.jpg"
+                        alt="EPR Registration for Tyre Waste"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >EPR Registration for Tyre Waste</a
+                        >
+                        <p class="card-text">
+                          Tyre producer registration to comply with EPR norms
+                          and sustainable waste disposal systems.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 7 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/EPC-ETA-Certification-services.jpg"
+                        alt="EPC-ETA Approval"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >WPC-ETA Approval</a
+                        >
+                        <p class="card-text">
+                          Mandatory ETA approval from WPC for importing
+                          RF-enabled wireless, Wi-Fi, and IoT devices in India.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 8 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/BIS-X-Certification-services.jpg"
+                        alt="BIS Scheme-X Certification"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >BIS Scheme-X Certification</a
+                        >
+                        <p class="card-text">
+                          Certification under BIS Scheme-X is mandatory for
+                          specific products as per Indian regulatory standards.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 9 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/TEC-Certification-services.jpg"
+                        alt="TEC/MTCTE Approval"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >TEC/MTCTE Approval</a
+                        >
+                        <p class="card-text">
+                          Telecom and networking devices must be certified under
+                          TEC/MTCTE to be legally sold or used in India.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 10 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/IMEI-Certification-services.jpg"
+                        alt="TAC & IMEI Registration"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >TAC & IMEI Registration</a
+                        >
+                        <p class="card-text">
+                          TAC and IMEI registration is required to legally
+                          import and sell mobile devices in the Indian market.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 11 -->
+                  <div class="carousel-card">
+                    <div class="card">
+                      <img
+                        src="images/LMPC-Certification-services.jpg"
+                        alt="Legal Metrology (LMPC) Registration"
+                      />
+                      <div class="card-body">
+                        <a class="card-title fw-bold" href="#"
+                          >Legal Metrology (LMPC) Registration</a
+                        >
+                        <p class="card-text">
+                          Legal Metrology registration for importers ensures
+                          proper labelling and packaging of goods in India.
+                        </p>
+                        <button class="service_button">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more cards here -->
                 </div>
-
-            </div>
-
-            <!-- About section end -->
-
-
-           <!-- Services Section start-->
-             <!-- =============================== -->
-
-
-
-<section class="py-5 bg-light" data-aos="fade-up" id="services-slider">
-  <div class="container text-center">
-    <div class="fancy-heading-wrapper">
-    <div class="fancy-heading">
-        <h5>What We Do</h5>
-      </div>
-      </div>
-    <h2 class="text-center section-title mb-2">Our Services</h2>
-                                 <div class="decor-line mb-2" id="center-title">
-                                     <span></span>
-                                     <span></span>
-                                     <span></span>
-                                   </div>
-
-       <p class="py-3">At SS Global Services, we offer a complete range of certification and compliance services tailored to meet the needs of manufacturers, importers, and brand owners. From BIS and BEE certifications to EPR, WPC, TEC, and LMPC registrations, our expert-led process ensures fast approvals, minimal delays, and full legal compliance. Our top services are trusted by startups and global enterprises alike for their accuracy, reliability, and support at every step.</p>
-
-    <div class="carousel-wrapper">
-    <div class="carousel-container" id="carousel">
-      <div class="carousel-track" id="carouselTrack">
-        <!-- Card 1 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/bee-certification-services.jpg" alt="BEE Registration">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">BEE Registration</a>
-              <p class="card-text">
-                BEE registration for electrical appliances ensures energy efficiency compliance in Indian markets.
-              </p>
-              <button class="service_button">Read More</button>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Card 2 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/BIS-CRS-Certification-services.jpg" alt="BIS (CRS) Registration for Electronic Product">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">BIS (CRS) Registration for Electronic Product</a>
-              <p class="card-text">
-                Mandatory CRS registration for electronics under BIS ensures product safety and performance compliance.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
+        <!-- -----servises section end -->
 
-        <!-- Card 3 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/EPR-E-WASTE-Certification-services.jpg" alt="EPR Registration for E-Waste">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">EPR Registration for E-Waste</a>
-              <p class="card-text">
-                Register under CPCB's EPR policy to manage and dispose of e-waste responsibly and lawfully in India.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/EPR-PLASTIC-Certification-services.jpg" alt="EPR Registration for Plastic Waste">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">EPR Registration for Plastic Waste</a>
-              <p class="card-text">
-                Plastic waste certification under EPR ensures legal compliance for producers and brand owners in India.
-              </p>
-              <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/EPR-BATTERY-Certification-services.jpg" alt="EPR Registration for Battery Waste">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">EPR Registration for Battery Waste</a>
-              <p class="card-text">
-                Battery waste registration ensures safe handling, recycling, and regulatory compliance for all producers.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/EPR-TYRE-Certification-services.jpg" alt="EPR Registration for Tyre Waste">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">EPR Registration for Tyre Waste</a>
-              <p class="card-text">
-                Tyre producer registration to comply with EPR norms and sustainable waste disposal systems.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/EPC-ETA-Certification-services.jpg" alt="EPC-ETA Approval">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">WPC-ETA  Approval</a>
-              <p class="card-text">
-                Mandatory ETA approval from WPC for importing RF-enabled wireless, Wi-Fi, and IoT devices in India.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Card 8 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/BIS-X-Certification-services.jpg" alt="BIS Scheme-X Certification">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">BIS Scheme-X Certification</a>
-              <p class="card-text">
-                Certification under BIS Scheme-X is mandatory for specific products as per Indian regulatory standards.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Card 9 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/TEC-Certification-services.jpg" alt="TEC/MTCTE Approval">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">TEC/MTCTE Approval</a>
-              <p class="card-text">
-                Telecom and networking devices must be certified under TEC/MTCTE to be legally sold or used in India.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-        <!-- Card 10 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/IMEI-Certification-services.jpg" alt="TAC & IMEI Registration">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">TAC & IMEI Registration</a>
-              <p class="card-text">
-                TAC and IMEI registration is required to legally import and sell mobile devices in the Indian market.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-        <!-- Card 11 -->
-        <div class="carousel-card">
-          <div class="card">
-            <img src="images/LMPC-Certification-services.jpg" alt="Legal Metrology (LMPC) Registration">
-            <div class="card-body">
-              <a class="card-title fw-bold" href="#">Legal Metrology (LMPC) Registration</a>
-              <p class="card-text">
-                Legal Metrology registration for importers ensures proper labelling and packaging of goods in India.
-              </p>
-               <button class="service_button">Read More</button>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards here -->
-      </div>
-    </div>
-  </div>
-  
-  </div>
-</section>
-
-<!-- -----servises section end -->
-
-
-
-<!-- Why Choose Us Start 
+        <!-- Why Choose Us Start 
  =================================================== -->
 
-<section class="why-choose-us"data-aos="fade-up">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="finix-text">
-              <h6>SS Global Services</h6>
-              <h2>Why people choose us?</h2>
-                 <div class="decor-line mb-4">
-                                     <span></span>
-                                     <span></span>
-                                     <span></span>
-                                   </div>
-              <p>Our services are trusted by manufacturers and importers for their speed, reliability, and full compliance.</p>
-              <img src="images/Why Choose Us SS global services.png" alt="">
-              <div class="ct-btn">
-                <a href="#" class=""><i class="icon-play" id="video-play-button"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
+        <section class="why-choose-us" data-aos="fade-up">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-box mt-4">
-                  <div class="feature-box-content text-center">
-                    <div class="fbc-btn">
-                      <i class="icon-building"></i>
-                    </div>
-                    <h3>Trusted Company</h3>
-                    <p>Serving over 1000+ satisfied brands across India with consistent and verified certification support.</p>
+              <div class="col-lg-6" data-aos="fade-right">
+                <div class="finix-text">
+                  <h6>SS Global Services</h6>
+                  <h2>Why people choose us?</h2>
+                  <div class="decor-line mb-4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p>
+                    Our services are trusted by manufacturers and importers for
+                    their speed, reliability, and full compliance.
+                  </p>
+                  <img
+                    src="images/Why Choose Us SS global services.png"
+                    alt=""
+                  />
+                  <div class="ct-btn">
+                    <a href="#" class=""
+                      ><i class="icon-play" id="video-play-button"></i
+                    ></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="feature-box">
-                  <div class="feature-box-content text-center">
-                    <div class="fbc-btn">
-                      <i class="icon-phone"></i>
+              <div class="col-lg-6" data-aos="fade-left">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="feature-box mt-4">
+                      <div class="feature-box-content text-center">
+                        <div class="fbc-btn">
+                          <i class="icon-building"></i>
+                        </div>
+                        <h3>Trusted Company</h3>
+                        <p>
+                          Serving over 1000+ satisfied brands across India with
+                          consistent and verified certification support.
+                        </p>
+                      </div>
                     </div>
-                    <h3>24/7 Support</h3>
-                    <p>Responsive expert support team available around the clock to solve client queries and concerns.</p>
                   </div>
-                </div>
-              </div><div class="col-lg-6">
-                <div class="feature-box">
-                  <div class="feature-box-content text-center">
-                    <div class="fbc-btn">
-                      <i class="icon-spinner"></i>
+                  <div class="col-lg-6">
+                    <div class="feature-box">
+                      <div class="feature-box-content text-center">
+                        <div class="fbc-btn">
+                          <i class="icon-phone"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>
+                          Responsive expert support team available around the
+                          clock to solve client queries and concerns.
+                        </p>
+                      </div>
                     </div>
-                    <h3>Fast Processing</h3>
-                    <p>Speedy application handling and coordination ensures approvals are received on time, every time.</p>
                   </div>
-                </div>
-              </div><div class="col-lg-6">
-                <div class="feature-box active-feature">
-                  <div class="feature-box-content text-center">
-                    <div class="fbc-btn">
-                      <i class="icon-truck"></i>
+                  <div class="col-lg-6">
+                    <div class="feature-box">
+                      <div class="feature-box-content text-center">
+                        <div class="fbc-btn">
+                          <i class="icon-spinner"></i>
+                        </div>
+                        <h3>Fast Processing</h3>
+                        <p>
+                          Speedy application handling and coordination ensures
+                          approvals are received on time, every time.
+                        </p>
+                      </div>
                     </div>
-                    <h3>In-time Delivery</h3>
-                    <p>All certifications and services are delivered as committed, helping clients meet launch deadlines.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="feature-box active-feature">
+                      <div class="feature-box-content text-center">
+                        <div class="fbc-btn">
+                          <i class="icon-truck"></i>
+                        </div>
+                        <h3>In-time Delivery</h3>
+                        <p>
+                          All certifications and services are delivered as
+                          committed, helping clients meet launch deadlines.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
+        <!-- Why Choose Us End---------- === -->
 
-    <!-- Why Choose Us End---------- === -->
-
-
-
-     <!-- Testimonials start
+        <!-- Testimonials start
   ===================================== -->
 
-<section class="testimonials">
-        <div class="container-fluid">
-          
-<div class="container testimonial-section d-flex flex-wrap">
-    <!-- Left Text (col-md-5) -->
-    <div class="col-md-5 testimonial-text d-flex flex-column justify-content-center" data-aos="fade-right">
-      <h2 class="mb-2">Why People Trust </h2> 
-      <p class="highlight fs-2 mb-5">SS Global Services</p>
-      <p style="font-size: 1.2rem;">
-        At <span class="highlight">SS Global Services</span>, we believe in long-term partnerships. Our clients consistently praise our reliability,
-        transparency, and efficiency in every project. From global logistics to business consultations,
-        our service speaks for itself.
-      </p>
-      <p class="mt-4 text-muted">
-        With over a decade of experience, <span class="highlight">SS Global Services</span> is a name you can trust.
-      </p>
-    </div>
+        <section class="testimonials">
+          <div class="container-fluid">
+            <div class="container testimonial-section d-flex flex-wrap">
+              <!-- Left Text (col-md-5) -->
+              <div
+                class="col-md-5 testimonial-text d-flex flex-column justify-content-center"
+                data-aos="fade-right"
+              >
+                <h2 class="mb-2">Why People Trust</h2>
+                <p class="highlight fs-2 mb-5">SS Global Services</p>
+                <p style="font-size: 1.2rem">
+                  At <span class="highlight">SS Global Services</span>, we
+                  believe in long-term partnerships. Our clients consistently
+                  praise our reliability, transparency, and efficiency in every
+                  project. From global logistics to business consultations, our
+                  service speaks for itself.
+                </p>
+                <p class="mt-4 text-muted">
+                  With over a decade of experience,
+                  <span class="highlight">SS Global Services</span> is a name
+                  you can trust.
+                </p>
+              </div>
 
-    <!-- Right Cards (col-md-7) -->
-    <div class="col-md-7 testimonial-carousel d-flex align-items-center" data-aos="fade-left">
-      <swiper-container
-        direction="horizontal"
-        slides-per-view="1"
-        space-between="30"
-        loop="true"
-        autoplay-delay="4000"
-        autoplay-disable-on-interaction="false"
-        effect="slide"
-        grab-cursor="true"
-      >
-        <swiper-slide>
-          <div class="testimonial-card">
-            <img src="images/Testimonial-1.png" class="profile-img" alt="Ravi Sharma">
-            <div class="testimonial-content">
-              <h5>Ravi Sharma</h5>
-              <p>SS Global completely transformed our logistics process. Their team handled every issue with patience, precision, and unmatched professionalism. Outstanding service and continuous support have made them an essential part of our operations.</p>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+              <!-- Right Cards (col-md-7) -->
+              <div
+                class="col-md-7 testimonial-carousel d-flex align-items-center"
+                data-aos="fade-left"
+              >
+                <swiper-container
+                  direction="horizontal"
+                  slides-per-view="1"
+                  space-between="30"
+                  loop="true"
+                  autoplay-delay="4000"
+                  autoplay-disable-on-interaction="false"
+                  effect="slide"
+                  grab-cursor="true"
+                >
+                  <swiper-slide>
+                    <div class="testimonial-card">
+                      <img
+                        src="images/Testimonial-1.png"
+                        class="profile-img"
+                        alt="Ravi Sharma"
+                      />
+                      <div class="testimonial-content">
+                        <h5>Ravi Sharma</h5>
+                        <p>
+                          SS Global completely transformed our logistics
+                          process. Their team handled every issue with patience,
+                          precision, and unmatched professionalism. Outstanding
+                          service and continuous support have made them an
+                          essential part of our operations.
+                        </p>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                      <svg
+                        class="svg-bg"
+                        viewBox="0 0 1440 320"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          fill="skyblue"
+                          d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                    <div class="testimonial-card">
+                      <img
+                        src="images/Testimonial-2.png"
+                        class="profile-img"
+                        alt="Neha Joshi"
+                      />
+                      <div class="testimonial-content">
+                        <h5>Neha Joshi</h5>
+                        <p>
+                          Reliable, fast, and efficient. SS Global's
+                          transparency in every phase made us feel confident and
+                          secure. They offer consistent communication, on-time
+                          delivery, and a client-focused approach that makes
+                          them stand out.
+                        </p>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                      <svg
+                        class="svg-bg"
+                        viewBox="0 0 1440 320"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          fill="skyblue"
+                          d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                    <div class="testimonial-card">
+                      <img
+                        src="images/Testimonial-1.png"
+                        class="profile-img"
+                        alt="John Patel"
+                      />
+                      <div class="testimonial-content">
+                        <h5>John Patel</h5>
+                        <p>
+                          The most professional and trustworthy company we’ve
+                          worked with. Their expert guidance helped us scale
+                          quickly, and their team continues to provide excellent
+                          after-service that’s rare to find in this industry.
+                        </p>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                      <svg
+                        class="svg-bg"
+                        viewBox="0 0 1440 320"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          fill="skyblue"
+                          d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </swiper-slide>
+                </swiper-container>
               </div>
             </div>
-            <svg class="svg-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-              <path fill="skyblue" d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-            </svg>
           </div>
-        </swiper-slide>
+        </section>
 
-        <swiper-slide>
-          <div class="testimonial-card">
-            <img src="images/Testimonial-2.png" class="profile-img" alt="Neha Joshi">
-            <div class="testimonial-content">
-              <h5>Neha Joshi</h5>
-              <p>Reliable, fast, and efficient. SS Global's transparency in every phase made us feel confident and secure. They offer consistent communication, on-time delivery, and a client-focused approach that makes them stand out.</p>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-            <svg class="svg-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-              <path fill="skyblue" d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-            </svg>
-          </div>
-        </swiper-slide>
+        <!-- Testimonials End --------- -->
 
-        <swiper-slide>
-          <div class="testimonial-card">
-            <img src="images/Testimonial-1.png" class="profile-img" alt="John Patel">
-            <div class="testimonial-content">
-              <h5>John Patel</h5>
-              <p>The most professional and trustworthy company we’ve worked with. Their expert guidance helped us scale quickly, and their team continues to provide excellent after-service that’s rare to find in this industry.</p>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-            <svg class="svg-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-              <path fill="skyblue" d="M0,192L120,186.7C240,181,480,171,720,165.3C960,160,1200,160,1320,160L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-            </svg>
-          </div>
-        </swiper-slide>
-      </swiper-container>
-    </div>
-  </div>
-
-
-        </div>
-      </section>
-
-<!-- Testimonials End --------- -->
-
- <!-- counting text section start 
+        <!-- counting text section start 
   ================================================== -->
 
- <section class="counter-section bg-light" data-aos="fade-up">
-  <div class="container">
-    <h2 class="section-title mb-0">Every decision counts,</h2>
-    <h2 class="section-title mb-2" style="color: #1bb1f8;">Every second matters.</h2>
-     <div class="decor-line mb-5" id="center-title">
-                                     <span></span>
-                                     <span></span>
-                                     <span></span>
-                                   </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-3 col-md-6">
-        <div class="counter-box">
-          <i class="bi bi-people-fill"></i>
-          <div class="counter-number mt-3" data-target="1800">0</div>
-          <div class="counter-label mt-2">Happy Clients</div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="counter-box">
-          <!-- <i class="bi bi-check-circle-fill"></i> -->
-           <i class="bi bi-patch-check-fill"></i>
-          <div class="counter-number mt-3" data-target="1500">0</div>
-          <div class="counter-label mt-2">Projects Completed</div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="counter-box">
-          <!-- <i class="bi bi-award-fill"></i> -->
-           <i class="bi bi-trophy-fill"></i>
-          <div class="counter-number mt-3" data-target="50">0</div>
-          <div class="counter-label mt-2">Awards Won</div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="counter-box">
-          <i class="bi bi-geo-alt-fill"></i>
-          <div class="counter-number mt-3" data-target="6">0</div>
-          <div class="counter-label mt-2">Locations</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
- <!-- counting text section End -->
-
-
-
-
-            <!-- call out-->
-            <div class="call-out call-out-form" data-aos="fade-up">
-                <div class="container">
-                    <div class="call-out-item">
-
-                        <span class="call-out-icon cicon-glove"></span>
-
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12">
-
-                                <h2 class="nl-title">Request a call back</h2>
-                                <h6><span>Or Call: </span> +91-9999992605</h6>
-
-                            </div>
-                            <div class="col-md-9 col-sm-12">
-
-                                <form id="contact-form" class="form-wrap flex-row fx-col-3 style-2">
-
-                                    <div class="form-col">
-                                        <input type="text" name="name" placeholder="Name *" required>
-                                    </div>
-
-                                    <div class="form-col">
-                                        <input type="email" name="email" placeholder="Email *" required>
-                                    </div>
-
-                                    <div class="form-col">
-                                        <input type="tel" name="phone" placeholder="Phone *" required>
-                                    </div>
-
-                                    <div class="form-col">                                       
-                                        <select class="form-select" id="select-form1" name="services" required>
-  <option value="" disabled selected>Select Service  *</option>
-  <option value="1">BEE Registration</option>
-  <option value="2">BIS (CRS) Registration For Electronic Product</option>
-  <option value="3">EPR Registration for E-Waste</option>
-  <option value="4">EPR Registration for Plastic Waste</option>
-  <option value="5">EPR Registration for BAttery Waste</option>
-  <option value="6">EPR Registration for Tyre Waste</option>
-  <option value="7">WPC-ETA  Approval</option>
-  <option value="8">BIS Scheme-X Certification</option>
-  <option value="9">TEC/MTCTE Approval</option>
-  <option value="10">TAC & IMEI Registration</option>
-  <option value="11">LMPC Registration</option>
-  <option value="12">Legal Metrology</option>
-  <option value="13">Other</option>
-</select>
-</div>
-
-                                    <div class="form-col">
-                                        <textarea name="cf-message" placeholder="How Can We Help You?  *" required></textarea>
-                                    </div>
-
-                                    <div class="form-col">
-                                        <button type="submit" data-type="submit" class="btn btn-style-5 full-width">Submit Request</button>
-                                    </div>
-
-                                </form>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+        <section class="counter-section bg-light" data-aos="fade-up">
+          <div class="container">
+            <h2 class="section-title mb-0">Every decision counts,</h2>
+            <h2 class="section-title mb-2" style="color: #1bb1f8">
+              Every second matters.
+            </h2>
+            <div class="decor-line mb-5" id="center-title">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter-box">
+                  <i class="bi bi-people-fill"></i>
+                  <div class="counter-number mt-3" data-target="1800">0</div>
+                  <div class="counter-label mt-2">Happy Clients</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter-box">
+                  <!-- <i class="bi bi-check-circle-fill"></i> -->
+                  <i class="bi bi-patch-check-fill"></i>
+                  <div class="counter-number mt-3" data-target="1500">0</div>
+                  <div class="counter-label mt-2">Projects Completed</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter-box">
+                  <!-- <i class="bi bi-award-fill"></i> -->
+                  <i class="bi bi-trophy-fill"></i>
+                  <div class="counter-number mt-3" data-target="50">0</div>
+                  <div class="counter-label mt-2">Awards Won</div>
+                </div>
+              </div>
 
+              <div class="col-lg-3 col-md-6">
+                <div class="counter-box">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div class="counter-number mt-3" data-target="6">0</div>
+                  <div class="counter-label mt-2">Locations</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- Our Team section start------------------------- -->
+        <!-- counting text section End -->
 
-             <div class="container-fluid pt-1 bg-light" data-aos="fade-up">
-           <div class="container my-5 py-5">
-      
-    <h2 class="text-center section-title mb-2">Meet Our Team</h2>
-         <div class="decor-line mb-4" id="center-title">
-                                     <span></span>
-                                     <span></span>
-                                     <span></span>
-                                   </div>
-    <p class="mb-5 text-center"> Our dedicated team consists of compliance consultants, BIS and EPR specialists, legal advisors, project managers, and technical experts. Each member brings specialized knowledge to help you achieve fast and accurate certification. We work collaboratively to ensure your product meets every regulatory requirement with minimal hassle.</p>
+        <!-- call out-->
+        <div class="call-out call-out-form" data-aos="fade-up">
+          <div class="container">
+            <div class="call-out-item">
+              <span class="call-out-icon cicon-glove"></span>
 
-<swiper-container
-  class="mySwiper"
-  effect="coverflow"
-  grab-cursor="true"
-  centered-slides="true"
-  slides-per-view="auto"
-  loop="true"
-  autoplay="true"
-  autoplay-delay="0"
-  autoplay-disable-on-interaction="false"
-  speed="2000"
-  coverflow-effect-rotate="50"
-  coverflow-effect-stretch="0"
-  coverflow-effect-depth="100"
-  coverflow-effect-modifier="1"
-  coverflow-effect-slide-shadows="true"
-  pagination="true"
-  breakpoints='{
+              <div class="row">
+                <div class="col-md-3 col-sm-12">
+                  <h2 class="nl-title">Request a call back</h2>
+                  <h6><span>Or Call: </span> +91-9999992605</h6>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                  <form
+                    id="contact-form"
+                    class="form-wrap flex-row fx-col-3 style-2"
+                  >
+                    <div class="form-col">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name *"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-col">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email *"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-col">
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone *"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-col">
+                      <select
+                        class="form-select"
+                        id="select-form1"
+                        name="services"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select Service *
+                        </option>
+                        <option value="1">BEE Registration</option>
+                        <option value="2">
+                          BIS (CRS) Registration For Electronic Product
+                        </option>
+                        <option value="3">EPR Registration for E-Waste</option>
+                        <option value="4">
+                          EPR Registration for Plastic Waste
+                        </option>
+                        <option value="5">
+                          EPR Registration for BAttery Waste
+                        </option>
+                        <option value="6">
+                          EPR Registration for Tyre Waste
+                        </option>
+                        <option value="7">WPC-ETA Approval</option>
+                        <option value="8">BIS Scheme-X Certification</option>
+                        <option value="9">TEC/MTCTE Approval</option>
+                        <option value="10">TAC & IMEI Registration</option>
+                        <option value="11">LMPC Registration</option>
+                        <option value="12">Legal Metrology</option>
+                        <option value="13">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="form-col">
+                      <textarea
+                        name="cf-message"
+                        placeholder="How Can We Help You?  *"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="form-col">
+                      <button
+                        type="submit"
+                        data-type="submit"
+                        class="btn btn-style-5 full-width"
+                      >
+                        Submit Request
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Team section start------------------------- -->
+
+        <div class="container-fluid pt-1 bg-light" data-aos="fade-up">
+          <div class="container my-5 py-5">
+            <h2 class="text-center section-title mb-2">Meet Our Team</h2>
+            <div class="decor-line mb-4" id="center-title">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="mb-5 text-center">
+              Our dedicated team consists of compliance consultants, BIS and EPR
+              specialists, legal advisors, project managers, and technical
+              experts. Each member brings specialized knowledge to help you
+              achieve fast and accurate certification. We work collaboratively
+              to ensure your product meets every regulatory requirement with
+              minimal hassle.
+            </p>
+
+            <swiper-container
+              class="mySwiper"
+              effect="coverflow"
+              grab-cursor="true"
+              centered-slides="true"
+              slides-per-view="auto"
+              loop="true"
+              autoplay="true"
+              autoplay-delay="0"
+              autoplay-disable-on-interaction="false"
+              speed="2000"
+              coverflow-effect-rotate="50"
+              coverflow-effect-stretch="0"
+              coverflow-effect-depth="100"
+              coverflow-effect-modifier="1"
+              coverflow-effect-slide-shadows="true"
+              pagination="true"
+              breakpoints='{
     "1200": {
       "coverflowEffect": {
         "rotate": 50,
@@ -827,672 +1111,826 @@
       }
     }
   }'
->
-
-    <swiper-slide class="col-lg-3 cl-md-4 col-sm-1 card-container" id="team-container">
-      
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+            >
+              <swiper-slide
+                class="col-lg-3 cl-md-4 col-sm-1 card-container"
+                id="team-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Mr Shyam Sunder</p>
+                  <p class="text-blk position mb-0">CEO</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Manisha Sharma</p>
+                  <p class="text-blk position mb-0">Manager</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Shailesh Singh</p>
+                  <p class="text-blk position mb-0">Web Developer</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Saifuzzama Ansari</p>
+                  <p class="text-blk position mb-0">Engineer</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Yashika Dhawan</p>
+                  <p class="text-blk position mb-0">
+                    Business Development Manager
+                  </p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Abhishek</p>
+                  <p class="text-blk position mb-0">
+                    Business Development Manager
+                  </p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Raushan</p>
+                  <p class="text-blk position mb-0">Account Executive</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Davis George</p>
+                  <p class="text-blk position mb-0">CEO</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide
+                class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container"
+              >
+                <div class="team-card" id="team-card">
+                  <div class="team-image-wrapper">
+                    <img
+                      class="team-member-image"
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    />
+                  </div>
+                  <p class="text-blk employee-name">Davis George</p>
+                  <p class="text-blk position mb-0">CEO</p>
+                  <p class="text-blk feature-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="team-social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="icon-instagram-5"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="icon-linkedin-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
         </div>
-        <p class="text-blk employee-name">
-          Mr Shyam Sunder
-        </p>
-        <p class="text-blk position mb-0">
-          CEO
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-      
-      </div>
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-      
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Manisha Sharma
-        </p>
-        <p class="text-blk position mb-0">
-          Manager
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-      
-      </div>
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
+        <!-- Team section End -->
 
-      
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Shailesh Singh
-        </p>
-        <p class="text-blk position mb-0">
-          Web Developer
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-        
-      </div>
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Saifuzzama Ansari
-        </p>
-        <p class="text-blk position mb-0">
-          Engineer
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-      
-      </div>
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-    
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Yashika Dhawan
-        </p>
-        <p class="text-blk position mb-0">
-          Business Development Manager
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-        </div>
-     
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-      
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Abhishek
-        </p>
-        <p class="text-blk position mb-0">
-          Business Development Manager
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-        </div>
-      </div>
-   
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-     
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Raushan
-        </p>
-        <p class="text-blk position mb-0">
-          Account Executive
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-        </div>
-      </div>
-   
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-           <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Davis George
-        </p>
-        <p class="text-blk position mb-0">
-          CEO
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-      </div>
-    </div>
-    </swiper-slide>
-    <swiper-slide class="responsive-cell-block col-lg-3 cl-md-4 col-sm-1 card-container">
-    
-      <div class="team-card" id="team-card">
-        <div class="team-image-wrapper">
-          <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
-        </div>
-        <p class="text-blk employee-name">
-          Davis George
-        </p>
-        <p class="text-blk position mb-0">
-          CEO
-        </p>
-        <p class="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team-social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="icon-instagram-5"></i>
-            
-        
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="icon-linkedin-3"></i>
-          </a>
-        </div>
-      
-    </div>
-    </swiper-slide>
-  </swiper-container>
-
-</div> 
-</div>
-            <!-- Team section End -->
-
-
-           
-
-            <!-- page section -->
-            <div class="page-section type2" id="client-carousel2">
-
-                <div class="container">
-
-                    <div class="carousel-type-2">
-                        <div class="owl-carousel" data-item-margin="30" data-max-items="6" data-autoplay="true">
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                        </div>
-                    </div>
-
+        <!-- page section -->
+        <div class="page-section type2" id="client-carousel2">
+          <div class="container">
+            <div class="carousel-type-2">
+              <div
+                class="owl-carousel"
+                data-item-margin="30"
+                data-max-items="6"
+                data-autoplay="true"
+              >
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
                 </div>
 
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
 
-
-<!-- FAQ section start 
+        <!-- FAQ section start 
  =========================================== -->
 
- <div class="container faq-section" data-aos="fade-up">
-  <div class="faq-header">
-    <h2>Frequently Asked Questions (FAQ)</h2>
-    <p>Find answers to common queries about our services.</p>
-  </div>
+        <div class="container faq-section" data-aos="fade-up">
+          <div class="faq-header">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <p>Find answers to common queries about our services.</p>
+          </div>
 
-<div class="row">
-     <div class="col-md-6 faq-img" data-aos="fade-right">
-<img src="images/FAQ-SS Global Services.gif" alt="FAQ - SS Global Services">
-    </div>
-    <div class="col-md-6" data-aos="fade-left">
-        <div class="accordion" id="faqAccordion">
-    <!-- FAQ Item 1 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
-          What is BIS certification and who needs it?
-        </button>
-      </h3>
-      <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          It is a mandatory certification issued by BIS for manufacturers and importers selling regulated products in India. Mandatory CRS registration for electronics under BIS ensures product safety and performance compliance.
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ Item 2 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-          How long does it take to get EPR registration?
-        </button>
-      </h3>
-      <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          It typically takes 15 to 20 working days, depending on the waste type and completeness of documents.
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ Item 3 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
-          Is WPC-ETA mandatory for Bluetooth and Wi-Fi devices?
-        </button>
-      </h3>
-      <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes, any device that uses radio frequency must have ETA approval from WPC India before being sold.
-        </div>
-      </div>
-    </div>
-
-     <!-- FAQ Item 4 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
-          Can foreign companies apply for BIS Scheme-X?
-        </button>
-      </h3>
-      <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes, with a valid Authorized Indian Representative and adherence to the required IS standards.
-        </div>
-      </div>
-    </div>
-
-     <!-- FAQ Item 5 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingFive">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
-          Do you help with TEC/MTCTE approval process?
-        </button>
-      </h3>
-      <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes. We handle document filing, coordination with labs, and full support through TEC approval.
-        </div>
-      </div>
-    </div>
-     <!-- FAQ Item 6 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingSix">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
-          What documents are required for LMPC Registration?
-        </button>
-      </h3>
-      <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Import license, product packaging details, declarations, and compliance statements are required.
-        </div>
-      </div>
-    </div>
-     <!-- FAQ Item 7 -->
-    <div class="accordion-item my-3">
-      <h3 class="accordion-header" id="faqHeadingSeven">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
-          Why choose SS Global Services?
-        </button>
-      </h3>
-      <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqHeadingSeven" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          We offer complete certification support with expert consultants, fast processing, and transparent service.
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-</div>
-  
-</div>
-
-
-<!-- FAQ End -------------------------------------------- -->
-
-
- <!-- banners -->
-            <div class="banners">
-
-                <div class="bg-col-left" data-aos="fade-right"></div>
-                <div class="bg-col-right" data-aos="fade-left"></div>
-
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-6" data-aos="fade-right">
-
-                            <div class="banner-inner">
-                                <div class="left-side">
-                                    <h2 class="banner-title">BIS Approval</h2>
-                                    <p>With ISI Mark Certification</p>
-                                </div>
-                                <div class="right-side">
-                                    <a href="#" class="btn btn-style-5 " id="openFormBtn">Apply Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6" data-aos="fade-left">
-
-                            <div class="banner-inner">
-                                <div class="left-side">
-                                    <h2 class="banner-title">EPR Certification</h2>
-                                    <p>Waste Compliance License</p>
-                                </div>
-                                <div class="right-side">
-                                    <a href="#" class="btn btn-style-4" id="openFormBtn">Apply Now</a>
-                                </div>
-                            </div>
-
-                        </div>
+          <div class="row">
+            <div class="col-md-6 faq-img" data-aos="fade-right">
+              <img
+                src="images/FAQ-SS Global Services.gif"
+                alt="FAQ - SS Global Services"
+              />
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <div class="accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseOne"
+                      aria-expanded="true"
+                      aria-controls="faqCollapseOne"
+                    >
+                      What is BIS certification and who needs it?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="faqHeadingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      It is a mandatory certification issued by BIS for
+                      manufacturers and importers selling regulated products in
+                      India. Mandatory CRS registration for electronics under
+                      BIS ensures product safety and performance compliance.
                     </div>
-
+                  </div>
                 </div>
 
-            </div>
-
-
-            
-  <!-- Our Blog page section start---------- -->
-   
-            <div class="page-section-bg"data-aos="fade-up">
-
-                <div class="container" >
-
-                    <div class="content-element4 align-center">
-
-                        <h5 class="section-sub-title">Our Blogs</h5>
-                        <h2 class="section-title">Latest Articles</h2>
-
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseTwo"
+                    >
+                      How long does it take to get EPR registration?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      It typically takes 15 to 20 working days, depending on the
+                      waste type and completeness of documents.
                     </div>
-
-                    <div class="entry-box">
-
-                        <div class="row">
-                            <div class="col-md-4 col-sm-12">
-
-                                <!-- entry -->
-                                <div class="entry">
-
-                                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
-                                    <div class="thumbnail-attachment">
-                                        <a href="#"><img src="images/BIS-CRS-Certification-services.jpg" alt=""></a>
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
-                                    <div class="entry-body">
-
-                                        <div class="entry-meta">
-
-                                            <time class="entry-date" datetime="2016-08-27">May 10, 2025</time>
-                                            <a href="#" class="entry-cat">BIS Registration</a>
-
-                                        </div>
-                                        <h4 class="entry-title"><a href="#">BIS (ISI Mark) for Domestic Manufacturers</a></h4>
-                                        <p>Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo.</p>
-                                        <a href="#" class="info-btn">Read more</a>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-
-                                <!-- entry -->
-                                <div class="entry">
-
-                                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
-                                    <div class="thumbnail-attachment">
-                                        <a href="#"><img src="images/BIS-X-Certification-services.jpg" alt=""></a>
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
-                                    <div class="entry-body">
-
-                                        <div class="entry-meta">
-
-                                            <time class="entry-date" datetime="2016-08-15">June 15, 2025</time>
-                                            <a href="#" class="entry-cat">BIS Registration</a>
-
-                                        </div>
-                                        <h4 class="entry-title"><a href="#">BIS Scheme-X Certification</a></h4>
-                                        <p>Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu.</p>
-                                        <a href="#" class="info-btn">Read more</a>
-
-                                    </div> 
-
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-
-                                <!-- entry -->
-                                <div class="entry">
-
-                                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
-                                    <div class="thumbnail-attachment">
-                                        <a href="#"><img src="images/bee-certification-services.jpg" alt=""></a>
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
-                                    <div class="entry-body">
-
-                                        <div class="entry-meta">
-
-                                            <time class="entry-date" datetime="2016-08-07">July 24, 2025</time>
-                                            <a href="#" class="entry-cat"> BEE Registration</a>
-
-                                        </div>
-                                        <h4 class="entry-title"><a href="#">BEE Registration</a></h4>
-                                        <p>Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. </p>
-                                        <a href="#" class="info-btn">Read more</a>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="align-center">
-                        <a href="blogs.html" class="btn btn-small">More Blogs</a>
-                    </div>
-
+                  </div>
                 </div>
 
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseThree"
+                    >
+                      Is WPC-ETA mandatory for Bluetooth and Wi-Fi devices?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingThree"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, any device that uses radio frequency must have ETA
+                      approval from WPC India before being sold.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseFour"
+                    >
+                      Can foreign companies apply for BIS Scheme-X?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingFour"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, with a valid Authorized Indian Representative and
+                      adherence to the required IS standards.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseFive"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseFive"
+                    >
+                      Do you help with TEC/MTCTE approval process?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingFive"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes. We handle document filing, coordination with labs,
+                      and full support through TEC approval.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseSix"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseSix"
+                    >
+                      What documents are required for LMPC Registration?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingSix"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Import license, product packaging details, declarations,
+                      and compliance statements are required.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="accordion-item my-3">
+                  <h3 class="accordion-header" id="faqHeadingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faqCollapseSeven"
+                      aria-expanded="false"
+                      aria-controls="faqCollapseSeven"
+                    >
+                      Why choose SS Global Services?
+                    </button>
+                  </h3>
+                  <div
+                    id="faqCollapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="faqHeadingSeven"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We offer complete certification support with expert
+                      consultants, fast processing, and transparent service.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ End -------------------------------------------- -->
+
+        <!-- banners -->
+        <div class="banners">
+          <div class="bg-col-left" data-aos="fade-right"></div>
+          <div class="bg-col-right" data-aos="fade-left"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-right">
+                <div class="banner-inner">
+                  <div class="left-side">
+                    <h2 class="banner-title">BIS Approval</h2>
+                    <p>With ISI Mark Certification</p>
+                  </div>
+                  <div class="right-side">
+                    <a href="#" class="btn btn-style-5" id="openFormBtn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-left">
+                <div class="banner-inner">
+                  <div class="left-side">
+                    <h2 class="banner-title">EPR Certification</h2>
+                    <p>Waste Compliance License</p>
+                  </div>
+                  <div class="right-side">
+                    <a href="#" class="btn btn-style-2" id="openFormBtn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Blog page section start---------- -->
+
+        <div class="page-section-bg" data-aos="fade-up">
+          <div class="container">
+            <div class="content-element4 align-center">
+              <h5 class="section-sub-title">Our Blogs</h5>
+              <h2 class="section-title">Latest Articles</h2>
             </div>
 
-            <!-- Our Blog section end -->
+            <div class="entry-box">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <!-- entry -->
+                  <div class="entry">
+                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
+                    <div class="thumbnail-attachment">
+                      <a href="#"
+                        ><img
+                          src="images/BIS-CRS-Certification-services.jpg"
+                          alt=""
+                      /></a>
+                    </div>
 
+                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+                    <div class="entry-body">
+                      <div class="entry-meta">
+                        <time class="entry-date" datetime="2016-08-27"
+                          >May 10, 2025</time
+                        >
+                        <a href="#" class="entry-cat">BIS Registration</a>
+                      </div>
+                      <h4 class="entry-title">
+                        <a href="#"
+                          >BIS (ISI Mark) for Domestic Manufacturers</a
+                        >
+                      </h4>
+                      <p>
+                        Donec sit amet eros. Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit. Mauris fermentum dictum
+                        magna...
+                      </p>
+                      <a href="#" class="info-btn">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <!-- entry -->
+                  <div class="entry">
+                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
+                    <div class="thumbnail-attachment">
+                      <a href="#"
+                        ><img
+                          src="images/BIS-X-Certification-services.jpg"
+                          alt=""
+                      /></a>
+                    </div>
 
+                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+                    <div class="entry-body">
+                      <div class="entry-meta">
+                        <time class="entry-date" datetime="2016-08-15"
+                          >June 15, 2025</time
+                        >
+                        <a href="#" class="entry-cat">BIS Registration</a>
+                      </div>
+                      <h4 class="entry-title">
+                        <a href="#">BIS Scheme-X Certification</a>
+                      </h4>
+                      <p>
+                        Ut tellus dolor, dapibus eget, elementum vel, cursus
+                        eleifend, elit. Aenean auctor wisi et urna. Aliquam erat
+                        volutpat. Duis ac turpis. Integer rutrum ante eu.
+                      </p>
+                      <a href="#" class="info-btn">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <!-- entry -->
+                  <div class="entry">
+                    <!-- - - - - - - - - - - - - - Entry attachment - - - - - - - - - - - - - - - - -->
+                    <div class="thumbnail-attachment">
+                      <a href="#"
+                        ><img
+                          src="images/bee-certification-services.jpg"
+                          alt=""
+                      /></a>
+                    </div>
 
+                    <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+                    <div class="entry-body">
+                      <div class="entry-meta">
+                        <time class="entry-date" datetime="2016-08-07"
+                          >July 24, 2025</time
+                        >
+                        <a href="#" class="entry-cat"> BEE Registration</a>
+                      </div>
+                      <h4 class="entry-title">
+                        <a href="#">BEE Registration</a>
+                      </h4>
+                      <p>
+                        Vestibulum libero nisl, porta vel, scelerisque eget,
+                        malesuada at, neque. Vivamus eget nibh. Etiam cursus leo
+                        vel metus. Nulla facilisi. Aenean nec eros.
+                      </p>
+                      <a href="#" class="info-btn">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="align-center">
+              <a href="blogs.html" class="btn btn-small">More Blogs</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Our Blog section end -->
 
-<!-- Client Slider 
+        <!-- Client Slider 
  ========================================== -->
- <div class="container" data-aos="fade-left">
-    <h2 class="text-center m-5">Our Partners / Clients</h2>
-    <section class="client-slider mb-4">
-      <div class="client-slide"><img src="images/logo-asian-paints.png" alt="logo asian paints"></div>
-      <div class="client-slide"><img src="images/logo-BOSCH-invented-life.jpg" alt="logo BOSCH invented life"></div>
-      <div class="client-slide"><img src="images/logo-tata-steel.png" alt="logo tata steel"></div>
-      <div class="client-slide"><img src="images/logo-Aditya-Birla-Chemical.png" alt="logo Aditya Birla Chemical"></div>
-      <div class="client-slide"><img src="images/logo-BOSE-Sound.jpg" alt="logo BOSE Sound"></div>
-      <div class="client-slide"><img src="images/logo-brilen.png" alt="logo brilen"></div>
-      <div class="client-slide"><img src="images/logo-care-medical.jpg" alt="logo care medical"></div>
-      <div class="client-slide"><img src="images/logo-Casio.png" alt="logo Casio"></div>
-      <div class="client-slide"><img src="images/logo-CSE.jpg" alt="Logo CSE"></div>
-      <div class="client-slide"><img src="images/logo-Dell.png" alt="Logo Dell"></div>
-      <div class="client-slide"><img src="images/logo-hanwha.webp" alt="Logo hanwha"></div>
-      <div class="client-slide"><img src="images/logo-HP.jpg" alt="Logo HP"></div>
-      <div class="client-slide"><img src="images/logo-Kuang-tai.jpg" alt="Logo Kuang Tai"></div>
-      <div class="client-slide"><img src="images/logo-LETV.webp" alt="Logo LETV"></div>
-      <div class="client-slide"><img src="images/logo-lg-chem.webp" alt="Logo chem"></div>
-      <div class="client-slide"><img src="images/logo-Mitsubishi.png" alt="Logo Mitsubishi"></div>
-      <div class="client-slide"><img src="images/logo-NG.png" alt="Logo NG"></div>
-      <div class="client-slide"><img src="images/logo-panasonic.webp" alt="Logo panasonic"></div>
-      <div class="client-slide"><img src="images/logo-Primayudha.jpg" alt="Logo Primayudha"></div>
-      <div class="client-slide"><img src="images/logo-samsung.webp" alt="Logo samsung"></div>
-      <div class="client-slide"><img src="images/logo-SICT.jpg" alt="Logo SICT"></div>
-      <div class="client-slide"><img src="images/logo-spice-telecom.jpg" alt="Logo spice telecom"></div>
-      <div class="client-slide"><img src="images/logo-Tenda.png" alt="logo Tenda"></div>
-      <div class="client-slide"><img src="images/logo-TRIVITRON.jpg" alt="Logo TRIVITRON"></div>
-      <div class="client-slide"><img src="images/logo-voestalpine.jpg" alt="Logo voestalpine"></div>
-      <div class="client-slide"><img src="images/Logo-foxconn.jpg" alt="Logo foxconn"></div>
-      <div class="client-slide"><img src="images/Logo-Singer.jpg" alt="Logo Singer"></div>
-      <div class="client-slide"><img src="images/Logo-Spitex.jpg" alt="Logo Spitex"></div>
-    </section>
-  </div>
-
+        <div class="container" data-aos="fade-left">
+          <h2 class="text-center m-5">Our Partners / Clients</h2>
+          <section class="client-slider mb-4">
+            <div class="client-slide">
+              <img src="images/logo-asian-paints.png" alt="logo asian paints" />
+            </div>
+            <div class="client-slide">
+              <img
+                src="images/logo-BOSCH-invented-life.jpg"
+                alt="logo BOSCH invented life"
+              />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-tata-steel.png" alt="logo tata steel" />
+            </div>
+            <div class="client-slide">
+              <img
+                src="images/logo-Aditya-Birla-Chemical.png"
+                alt="logo Aditya Birla Chemical"
+              />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-BOSE-Sound.jpg" alt="logo BOSE Sound" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-brilen.png" alt="logo brilen" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-care-medical.jpg" alt="logo care medical" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Casio.png" alt="logo Casio" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-CSE.jpg" alt="Logo CSE" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Dell.png" alt="Logo Dell" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-hanwha.webp" alt="Logo hanwha" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-HP.jpg" alt="Logo HP" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Kuang-tai.jpg" alt="Logo Kuang Tai" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-LETV.webp" alt="Logo LETV" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-lg-chem.webp" alt="Logo chem" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Mitsubishi.png" alt="Logo Mitsubishi" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-NG.png" alt="Logo NG" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-panasonic.webp" alt="Logo panasonic" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Primayudha.jpg" alt="Logo Primayudha" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-samsung.webp" alt="Logo samsung" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-SICT.jpg" alt="Logo SICT" />
+            </div>
+            <div class="client-slide">
+              <img
+                src="images/logo-spice-telecom.jpg"
+                alt="Logo spice telecom"
+              />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-Tenda.png" alt="logo Tenda" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-TRIVITRON.jpg" alt="Logo TRIVITRON" />
+            </div>
+            <div class="client-slide">
+              <img src="images/logo-voestalpine.jpg" alt="Logo voestalpine" />
+            </div>
+            <div class="client-slide">
+              <img src="images/Logo-foxconn.jpg" alt="Logo foxconn" />
+            </div>
+            <div class="client-slide">
+              <img src="images/Logo-Singer.jpg" alt="Logo Singer" />
+            </div>
+            <div class="client-slide">
+              <img src="images/Logo-Spitex.jpg" alt="Logo Spitex" />
+            </div>
+          </section>
+        </div>
 
         <!-- newsletter -->
-        <div class="call-out-form" >
-            <div class="container">
-                <div class="newsletter-wrap">
+        <div class="call-out-form">
+          <div class="container">
+            <div class="newsletter-wrap">
+              <span class="call-out-icon licon-paper-plane"></span>
 
-                    <span class="call-out-icon licon-paper-plane"></span>
-
-                    <div class="nl-col">
-                        <h2 class="nl-title">Newsletter <br> Sign Up!</h2>
-                    </div>
-                    <div class="nl-col">
-                        <p>Join our mailing list today and receive our latest newsletter delivered straight to your inbox!</p>
-                        <form id="newsletter" class="style-2">
-                            <button type="submit" class="btn-email btn btn-style-5 f-right" data-type="submit">Sign Me Up!</button>
-                            <div class="wrapper">
-                                <input type="email" placeholder="Enter your email address" name="newsletter-email">
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
+              <div class="nl-col">
+                <h2 class="nl-title">
+                  Newsletter <br />
+                  Sign Up!
+                </h2>
+              </div>
+              <div class="nl-col">
+                <p>
+                  Join our mailing list today and receive our latest newsletter
+                  delivered straight to your inbox!
+                </p>
+                <form id="newsletter" class="style-2">
+                  <button
+                    type="submit"
+                    class="btn-email btn btn-style-5 f-right"
+                    data-type="submit"
+                  >
+                    Sign Me Up!
+                  </button>
+                  <div class="wrapper">
+                    <input
+                      type="email"
+                      placeholder="Enter your email address"
+                      name="newsletter-email"
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
@@ -1500,197 +1938,289 @@
         <!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
 
         <footer id="footer" class="footer">
-
-            <div class="main-footer" data-bg="images/1920x556_bg1.jpg">
-
-                <div class="container">
-
-                    <div class="row flex-row">
-                        <div class="col-md-4 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Contact Us</h5>
-                                <div class="content-element3">
-                                    <p class="content-element1"><strong>Office address:</strong>  B-1/630, 2nd floor, Janakpuri, Delhi -58</p>
-                                    <p>
-                                       <strong>Phone:</strong><a href="tel:+919999992605" class="link-text"> +91 9999992605</a> <br><strong>Telephone:</strong><a href="tel:011-40194697" class="link-text"> 011-40194697 </a> <br><strong>WhatsApp: </strong> <a href="https://wa.me/919717929681" class="link-text"> +91 9717929681</a>  <br><strong>E-mail:</strong>  <a href="mailto:info@ssglobalservices.in" class="link-text">info@ssglobalservices.in</a>
-                                    </p>
-                                </div>
-
-                                <div class="brend-box">
-                                    <a href="#"><img src="images/brend-logo1.png" alt=""></a>
-                                    <a href="#"><img src="images/brend-logo2.png" alt=""></a>
-                                    <a href="#"><img src="images/brend-logo3.png" alt=""></a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Services</h5>
-                                <ul class="info-links">
-
-                                    <li><a href="#">BIS Approval</a></li>
-                                    <li><a href="#">EPR Certification</a></li>
-                                    <li><a href="#">WPC (ETA Approval)</a></li>
-                                    <li><a href="#">BEE Certification</a></li>
-                                    <li><a href="#">IMEI Certification</a></li>
-                                    <li><a href="#">ICAT Approval</a></li>
-                                    <li><a href="#">NOC Steel</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Quick Links</h5>
-                                <ul class="info-links">
-
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Special Offers</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Follow Us</h5>
-                                <ul class="social-icons style-2">
-
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-linkedin-3"></i></a></li>
-                                    <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-                                    <li><a href="#"><i class="icon-instagram-5"></i></a></li>
-
-                                </ul>
-
-                            </div>
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">We accept</h5>
-                                <div class="pay-box">
-                                    <a href="#"><img src="images/pay1.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay2.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay3.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay4.jpg" alt=""></a>
-                                </div>
-                            </div>
-
-                        </div>
+          <div class="main-footer" data-bg="images/1920x556_bg1.jpg">
+            <div class="container">
+              <div class="row flex-row">
+                <div class="col-md-4 col-xs-6 text-start">
+                  <!-- widget -->
+                  <div class="widget">
+                    <h5 class="widget-title">Contact Us</h5>
+                    <div class="content-element3">
+                      <p class="content-element1">
+                        <strong>Office address:</strong> B-1/630, 2nd floor,
+                        Janakpuri, Delhi -58
+                      </p>
+                      <p>
+                        <strong>Phone:</strong
+                        ><a href="tel:+919999992605" class="link-text">
+                          +91 9999992605</a
+                        >
+                        <br /><strong>Telephone:</strong
+                        ><a href="tel:011-40194697" class="link-text">
+                          011-40194697
+                        </a>
+                        <br /><strong>WhatsApp: </strong>
+                        <a href="https://wa.me/919717929681" class="link-text">
+                          +91 9717929681</a
+                        >
+                        <br /><strong>E-mail:</strong>
+                        <a
+                          href="mailto:info@ssglobalservices.in"
+                          class="link-text"
+                          >info@ssglobalservices.in</a
+                        >
+                      </p>
                     </div>
 
-                    <div class="copyright">
-                        <p>Copyright SSGlobalServices © <span id="copyright-year"></span>. All Rights Reserved.</p>
+                    <div class="brend-box">
+                      <a href="#"
+                        ><img src="images/BIS-certification-logo.png" alt=""
+                      /></a>
+                      <a href="#"
+                        ><img src="images/EPR-certification-logo.png" alt=""
+                      /></a>
+                      <a href="#"
+                        ><img src="images/BEE-certification-logo.png" alt=""
+                      /></a>
                     </div>
-
+                  </div>
                 </div>
+                <div class="col-md-2 col-xs-6">
+                  <!-- widget -->
+                  <div class="widget">
+                    <h5 class="widget-title">Services</h5>
+                    <ul class="info-links">
+                      <li><a href="#">BIS Approval</a></li>
+                      <li><a href="#">EPR Certification</a></li>
+                      <li><a href="#">WPC-ETA Approval</a></li>
+                      <li><a href="#">BEE Certification</a></li>
+                      <li><a href="#">TAC IMEI Certification</a></li>
+                      <li><a href="#">TEC/MTCTE Approval</a></li>
+                      <li><a href="#">LMPC Registration</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-6 ">
+                  <!-- widget -->
+                  <div class="widget">
+                    <h5 class="widget-title">Quick Links</h5>
+                    <ul class="info-links">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">News & Update</a></li>
+                      <li><a href="#">Our Gallery</a></li>
+                      <li><a href="#">Contact US</a></li>
+                      <li><a href="#">Our Blogs</a></li>
+                      <li><a href="#">International Audit</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6 text-md-end">
+                  <!-- widget -->
+                  <div class="widget">
+                    <h5 class="widget-title">Follow Us</h5>
+                    <ul class="social-icons style-2">
+                      <li>
+                        <a href="#"><i class="icon-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-linkedin-3"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-youtube-play"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-instagram-5"></i></a>
+                      </li>
+                    </ul>
+                  </div>
 
+                  <!-- widget -->
+                  <div class="widget">
+                    <h5 class="widget-title">We accept</h5>
+                    <div class="pay-box">
+                      <a href="#"><img src="images/pay1.jpg" alt="" /></a>
+                      <a href="#"><img src="images/pay2.jpg" alt="" /></a>
+                      <a href="#"><img src="images/pay3.jpg" alt="" /></a>
+                      <a href="#"><img src="images/pay4.jpg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <div class="container-fluid bottom-footer">
+              <div class="container">
+                          <div class="row ">
+              <div class=" col-md-6 copyright">
+                 <p>Copyright © <span id="copyright-year"></span> SS Global Services. All Rights Reserved.</p>
+                </div>
+                
+                <div class="col-md-6 privacy-policy">              
+                  <a href="">Privacy Policy</a> <span class="px-1">|</span>
+                  <a href="">Term & Condition</a> <span class="px-1">|</span>
+                  <a href="">Refund & Cancellation Policy</a>                
+                </div>
+              
+              </div>
+              </div>
+          </div>
+          </div>
         </footer>
 
         <!-- - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
-
-    </div>
+      </div>
     </div>
     <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
-<div class="sticky-icons">
-  <a href="https://wa.me/919717929681" target="_blank" class="icon whatsapp" title="Chat on WhatsApp">
-    <i class="icon-whatsapp"></i>
-  </a>
-  <a href="tel:+919999992605" class="icon call" title="Call Us">
-    <i class="icon-phone"></i>
-  </a>
-  <a href="mailto:info@ssglobalservices.in" class="icon email" title="Email Us">
-    <i class="icon-email"></i>
-  </a>
-</div>
+    <div class="sticky-icons">
+      <a
+        href="https://wa.me/919717929681"
+        target="_blank"
+        class="icon whatsapp"
+        title="Chat on WhatsApp"
+      >
+        <i class="icon-whatsapp"></i>
+      </a>
+      <a href="tel:+919999992605" class="icon call" title="Call Us">
+        <i class="icon-phone"></i>
+      </a>
+      <a
+        href="mailto:info@ssglobalservices.in"
+        class="icon email"
+        title="Email Us"
+      >
+        <i class="icon-email"></i>
+      </a>
+    </div>
 
-<!-- Modal popup Form start---------------- -->
-<div class="modal fade" id="popupForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <div class="row g-0">
-          <div class="col-md-5 form-image"></div>
-          <div class="col-md-7 p-4 bg-light">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="modal-title" id="popupFormLabel">Enquiry Form</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal popup Form start---------------- -->
+    <div
+      class="modal fade"
+      id="popupForm"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="popupFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5 form-image"></div>
+              <div class="col-md-7 p-4 bg-light">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h5 class="modal-title" id="popupFormLabel">Enquiry Form</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <form action="">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        name="phone"
+                        placeholder="Phone No."
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="country"
+                        placeholder="Country"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <select class="form-select" name="service" required>
+                        <option value="" disabled selected>
+                          Select Service
+                        </option>
+                        <option value="1">BEE Registration</option>
+                        <option value="2">
+                          BIS (CRS) Registration For Electronic Product
+                        </option>
+                        <option value="3">EPR Registration for E-Waste</option>
+                        <option value="4">
+                          EPR Registration for Plastic Waste
+                        </option>
+                        <option value="5">
+                          EPR Registration for BAttery Waste
+                        </option>
+                        <option value="6">
+                          EPR Registration for Tyre Waste
+                        </option>
+                        <option value="7">WPC-ETA Approval</option>
+                        <option value="8">BIS Scheme-X Certification</option>
+                        <option value="9">TEC/MTCTE Approval</option>
+                        <option value="10">TAC & IMEI Registration</option>
+                        <option value="11">LMPC Registration</option>
+                        <option value="12">Legal Metrology</option>
+                        <option value="13">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder="How we can help you?"
+                        name="message"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-submit px-4">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <form action="">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" name="name" placeholder="Name" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="tel" class="form-control" name="phone" placeholder="Phone No." required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" name="country" placeholder="Country" required>
-                </div>
-                <div class="col-md-12">
-                  <select class="form-select" name="service" required>
-                    <option value="" disabled selected>Select Service</option>
-   <option value="1">BEE Registration</option>
-  <option value="2">BIS (CRS) Registration For Electronic Product</option>
-  <option value="3">EPR Registration for E-Waste</option>
-  <option value="4">EPR Registration for Plastic Waste</option>
-  <option value="5">EPR Registration for BAttery Waste</option>
-  <option value="6">EPR Registration for Tyre Waste</option>
-  <option value="7">WPC-ETA  Approval</option>
-  <option value="8">BIS Scheme-X Certification</option>
-  <option value="9">TEC/MTCTE Approval</option>
-  <option value="10">TAC & IMEI Registration</option>
-  <option value="11">LMPC Registration</option>
-  <option value="12">Legal Metrology</option>
-  <option value="13">Other</option>
-                  </select>
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" rows="3" placeholder="How we can help you?" name="message" required></textarea>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center mt-4">
-                <button type="submit" class="btn btn-submit px-4">Submit</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal popup Form End---------------- -->
-
+    <!-- Modal popup Form End---------------- -->
 
     <!-- JS Libs & Plugins
   ============================================ -->
 
-<!-- bootstrap javascript CDN  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- bootstrap javascript CDN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="js/libs/jquery.modernizr.js"></script>
     <script src="js/libs/jquery-ui.min.js"></script>
@@ -1699,30 +2229,25 @@
     <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script>
     <script src="plugins/jquery.queryloader2.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 
+    <!-- Swiper JS ----------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <!-- Animation JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Slick JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-
-  <!-- Swiper JS ----------- -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-  <!-- Animation JS  -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-
-      <!-- JS theme files
+    <!-- JS theme files
   ============================================ -->
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
     <script src="js/header.js"></script>
-</body>
-
+  </body>
 </html>

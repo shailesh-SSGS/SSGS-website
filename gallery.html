@@ -1,413 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google Web Fonts
   ================================================== -->
 
-<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900%7COswald:200,300,400,500,600,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900%7COswald:200,300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
 
-<title>Gallery - SS Global Services</title>
+    <title>Gallery - SS Global Services</title>
 
-<!--meta info-->
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="keywords" content="">
-<meta name="description" content="">
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
-<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<!-- bootstrap css 
+    <!-- bootstrap css 
  =========================================== -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
 
-
-<!-- Vendor CSS
+    <!-- Vendor CSS
   ============================================ -->
 
-<link rel="stylesheet" href="font/demo-files/demo.css">
-<link rel="stylesheet" href="font/custom/styles.css">
-<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
-<link rel="stylesheet" href="plugins/revolution/css/settings.css">
-<link rel="stylesheet" href="plugins/revolution/css/layers.css">
-<link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+    <link rel="stylesheet" href="font/demo-files/demo.css" />
+    <link rel="stylesheet" href="font/custom/styles.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
 
-<!-- CSS theme files
+    <!-- CSS theme files
   ============================================ -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/fontello.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-<!-- Font Awesome 
+    <!-- Font Awesome 
  ======================= -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-        <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
 
     <div id="wrapper" class="wrapper-container">
+      <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
+      <nav id="mobile-advanced" class="mobile-advanced"></nav>
 
-        <nav id="mobile-advanced" class="mobile-advanced"></nav>
+      <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+      <div id="header-container"></div>
 
-            <div id="header-container"> </div>
+      <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
+      <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
-
-  <nav class="breadcrumbs-wrap style-3" aria-label="breadcrumb">
-    <div class="container">
-        <h1 class="page-title">Gallery - SS Global Services</h1>
-        <ul class="breadcrumbs">
+      <nav class="breadcrumbs-wrap style-3" aria-label="breadcrumb">
+        <div class="container">
+          <h1 class="page-title">Gallery - SS Global Services</h1>
+          <ul class="breadcrumbs">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Gallery</a></li>
             <li aria-current="page">Image Gallery</li>
-        </ul>
-    </div>
-</nav>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- - - - - - - - - - - - - end Breadcrumbs - - - - - - - - - - - - - - - -->
+      <!-- - - - - - - - - - - - - end Breadcrumbs - - - - - - - - - - - - - - - -->
 
+      <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
 
-<!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+      <div id="content">
+        <div class="container py-5 text-center">
+          <div class="fancy-heading-wrapper">
+            <div class="fancy-heading">
+              <h2 class="text-center">Our Gallery</h2>
+            </div>
+          </div>
+          <h2 class="section-title text-center mt-3">Moments That Matter</h2>
+          <div class="text-center my-5">
+            <div class="btn-group flex-wrap" role="group">
+              <button
+                class="btn filter-btn active"
+                onclick="filterSelection('all', event)"
+                id="gallery-button"
+              >
+                All
+              </button>
+              <button
+                class="btn filter-btn"
+                onclick="filterSelection('awesome', event)"
+                id="gallery-button"
+              >
+                BIS Approval
+              </button>
+              <button
+                class="btn filter-btn"
+                onclick="filterSelection('responsive', event)"
+                id="gallery-button"
+              >
+                BEE Certification
+              </button>
+              <button
+                class="btn filter-btn"
+                onclick="filterSelection('creative', event)"
+                id="gallery-button"
+              >
+                International
+              </button>
+              <button
+                class="btn filter-btn"
+                onclick="filterSelection('animated', event)"
+                id="gallery-button"
+              >
+                India
+              </button>
+            </div>
+          </div>
 
-        <div id="content">
-            
+          <div class="row g-4 mt-3">
+            <div class="col-sm-6 col-md-4 gallery-item awesome show">
+              <img
+                src="images/BIS-CRS-Certification-services.jpg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item creative show">
+              <img
+                src="images/EPR-PLASTIC-Certification-services.jpg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item responsive show">
+              <img
+                src="images/Aditya_Brila_Thai_and_Group_BIS.jpeg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item animated show">
+              <img
+                src="images/EPR-Services.jpg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item awesome show">
+              <img
+                src="images/ss-global-gallery.gif"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item creative show">
+              <img
+                src="images/SSGS-bg1.webp"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item responsive show">
+              <img
+                src="images/bee-certification-services.jpg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item animated show">
+              <img
+                src="images/Aditya_Brila_Thai_and_Group_BIS.jpeg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 gallery-item awesome show">
+              <img
+                src="images/EPR-E-WASTE-Certification-services.jpg"
+                class="gallery-img"
+                alt="Gallery Image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+          </div>
+        </div>
 
-<div class="container py-5 text-center">
-    <div class="fancy-heading-wrapper ">
-  <div class="fancy-heading ">
-    <h2 class="text-center">Our Gallery</h2>
-  </div>
-</div>
-    <h2 class="section-title text-center mt-3">Moments That Matter</h2>
-  <div class="text-center my-5">
-    <div class="btn-group flex-wrap" role="group">
-      <button class="btn filter-btn active" onclick="filterSelection('all', event)" id="gallery-button">All</button>
-      <button class="btn filter-btn" onclick="filterSelection('awesome', event)" id="gallery-button">BIS Approval</button>
-      <button class="btn filter-btn" onclick="filterSelection('responsive', event)" id="gallery-button">BEE Certification</button>
-      <button class="btn filter-btn" onclick="filterSelection('creative', event)" id="gallery-button">International</button>
-      <button class="btn filter-btn" onclick="filterSelection('animated', event)" id="gallery-button">India</button>
-    </div>
-  </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="imageModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+              <div class="modal-header border-0">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="modal-body d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src=""
+                  id="modalImage"
+                  class="modal-img"
+                  alt="Full Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of gallery --- -->
 
-  <div class="row g-4 mt-3" >
-    <div class="col-sm-6 col-md-4 gallery-item awesome show">
-      <img src="images/BIS-CRS-Certification-services.jpg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item creative show">
-      <img src="images/EPR-PLASTIC-Certification-services.jpg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item responsive show">
-      <img src="images/Aditya_Brila_Thai_and_Group_BIS.jpeg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item animated show">
-      <img src="images/EPR-Services.jpg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item awesome show">
-      <img src="images/ss-global-gallery.gif" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item creative show">
-      <img src="images/SSGS-bg1.webp" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item responsive show">
-      <img src="images/bee-certification-services.jpg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item animated show">
-      <img src="images/Aditya_Brila_Thai_and_Group_BIS.jpeg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-    <div class="col-sm-6 col-md-4 gallery-item awesome show">
-      <img src="images/EPR-E-WASTE-Certification-services.jpg" class="gallery-img" alt="Gallery Image" onclick="openModal(this.src)">
-    </div>
-  </div>
-</div>
+        <!-- page section -->
+        <div class="page-section type2" id="client-carousel2">
+          <div class="container">
+            <div class="carousel-type-2">
+              <div
+                class="owl-carousel"
+                data-item-margin="30"
+                data-max-items="6"
+                data-autoplay="true"
+              >
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
 
-<!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content bg-dark">
-      <div class="modal-header border-0">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Contact section Start ------------------------ -->
+
+        <div class="page-section-bg3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <h2 class="section-title">Request Service Today!</h2>
+                <p>
+                  Ready to get certified or need expert compliance support? Fill
+                  out the form below and our team at SS Global Services will
+                  connect with you shortly.
+                </p>
+                <p>
+                  We offer fast, reliable, and hassle-free assistance for all
+                  BIS and regulatory certification needs.
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <form class="form-wrap flex-row fx-col-2 style-2">
+                  <div class="form-col">
+                    <input type="text" placeholder="Name *" />
+                  </div>
+
+                  <div class="form-col">
+                    <input type="text" placeholder="Phone *" />
+                  </div>
+
+                  <div class="form-col">
+                    <input type="text" placeholder="Email *" />
+                  </div>
+
+                  <div class="form-col">
+                    <select
+                      class="form-select"
+                      id="select-form1"
+                      aria-label="Default select example"
+                      name="services"
+                      required
+                    >
+                      <option selected>Select Services</option>
+                      <option value="1">
+                        BIS (ISI Mark) for Domestic Manufacturers
+                      </option>
+                      <option value="2">
+                        BIS (ISI Mark) for Foreign Manufacturers
+                      </option>
+                      <option value="3">BIS Scheme-X Certification</option>
+                      <option value="4">
+                        BIS Certificate of Conformity (CoC)
+                      </option>
+                      <option value="5">BIS License For Toys</option>
+                      <option value="6">Reach Certification (Global)</option>
+                      <option value="7">
+                        Laboratory Recognition Scheme (LRS)
+                      </option>
+                      <option value="8">
+                        World Manufacturer Identifier (WMI) Code
+                      </option>
+                      <option value="9">BEE Registration</option>
+                      <option value="10">
+                        BIS (CRS) Registration For Electronic Product
+                      </option>
+                      <option value="11">E-Waste Management (EPR)</option>
+                      <option value="12">WPC-ETA Approval</option>
+                      <option value="13">TEC/MTCTE Approval</option>
+                      <option value="14">TAC & IMEI Registration</option>
+                      <option value="15">MSME & NSIC Registration</option>
+                      <option value="16">LMPC Registration</option>
+                      <option value="17">Start-Up Registration</option>
+                      <option value="18">Legal Metrology</option>
+                      <option value="19">EMI-EMC Test</option>
+                      <option value="20">RF Testing</option>
+                      <option value="21">IP Rating Test</option>
+                      <option value="22">NABL Testing</option>
+                      <option value="23">LM 79 & LM 80</option>
+                      <option value="24">ROHS Approval</option>
+                      <option value="25">List of Equipments</option>
+                    </select>
+                  </div>
+
+                  <div class="form-col full-width">
+                    <input type="text" placeholder="How Can We Help You?" />
+                  </div>
+
+                  <div class="form-col">
+                    <a href="#" class="btn btn-style-5">Submit Request</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Services Contact section End ------------------------ -->
       </div>
-      <div class="modal-body d-flex justify-content-center align-items-center">
-        <img src="" id="modalImage" class="modal-img" alt="Full Image">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end of gallery --- -->
+      <!-- Content End ------------------------ -->
 
+      <!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
 
-            <!-- page section -->
-            <div class="page-section type2" id="client-carousel2">
+      <footer id="footer" class="footer">
+        <div class="main-footer" data-bg="images/1920x556_bg1.jpg">
+          <div class="container">
+            <div class="row flex-row">
+              <div class="col-md-4 col-xs-6">
+                <!-- widget -->
+                <div class="widget">
+                  <h5 class="widget-title">Contact Us</h5>
+                  <div class="content-element3">
+                    <p class="content-element1">
+                      <b>Office address:</b> B-1/630, 2nd floor, Janakpuri,
+                      Delhi -58
+                    </p>
+                    <p>
+                      <b>Mobile:</b> +91 9999992605 <br /><b>Telephone:</b>
+                      011-40194697 <br /><b>Phone : </b> +91 9717929681 <br /><b
+                        >E-mail:</b
+                      >
+                      <a href="#" class="link-text">info@ssglobalservices.in</a>
+                    </p>
+                  </div>
 
-                <div class="container">
-
-                    <div class="carousel-type-2">
-                        <div class="owl-carousel" data-item-margin="30" data-max-items="6" data-autoplay="true">
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                            <div class="item-carousel">
-                                <!-- Carousel Item -->
-                                <a href="#"><img src="images/" alt=""></a>
-                                <!-- /Carousel Item -->
-                            </div>
-
-                        </div>
-                    </div>
-
+                  <div class="brend-box">
+                    <a href="#"><img src="images/brend-logo1.png" alt="" /></a>
+                    <a href="#"><img src="images/brend-logo2.png" alt="" /></a>
+                    <a href="#"><img src="images/brend-logo3.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6">
+                <!-- widget -->
+                <div class="widget">
+                  <h5 class="widget-title">Services</h5>
+                  <ul class="info-links">
+                    <li><a href="#">BIS Approval</a></li>
+                    <li><a href="#">EPR Certification</a></li>
+                    <li><a href="#">WPC (ETA Approval)</a></li>
+                    <li><a href="#">BEE Certification</a></li>
+                    <li><a href="#">IMEI Certification</a></li>
+                    <li><a href="#">ICAT Approval</a></li>
+                    <li><a href="#">NOC Steel</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6">
+                <!-- widget -->
+                <div class="widget">
+                  <h5 class="widget-title">Quick Links</h5>
+                  <ul class="info-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <!-- widget -->
+                <div class="widget">
+                  <h5 class="widget-title">Follow Us</h5>
+                  <ul class="social-icons style-2">
+                    <li>
+                      <a href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon-linkedin-3"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon-youtube-play"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon-instagram-5"></i></a>
+                    </li>
+                  </ul>
                 </div>
 
-            </div>
-
-<!-- Services Contact section Start ------------------------ -->
-
- <div class="page-section-bg3">
-
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-
-                            <h2 class="section-title">Request Service Today!</h2>
-                            <p>Ready to get certified or need expert compliance support? Fill out the form below and our team at SS Global Services will connect with you shortly. </p>
-                            <p>We offer fast, reliable, and hassle-free assistance for all BIS and regulatory certification needs.</p>
-
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-
-                            <form class="form-wrap flex-row fx-col-2 style-2">
-
-                                <div class="form-col">
-                                    <input type="text" placeholder="Name *">
-                                </div>
-
-                                <div class="form-col">
-                                    <input type="text" placeholder="Phone *">
-                                </div>
-
-                                <div class="form-col">
-                                    <input type="text" placeholder="Email *">
-                                </div>
-
-                                <div class="form-col">
-                                    <select class="form-select" id="select-form1" aria-label="Default select example" name="services" required>
-  <option selected>Select Services</option>
-  <option value="1">BIS (ISI Mark) for Domestic Manufacturers</option>
-  <option value="2">BIS (ISI Mark) for Foreign Manufacturers</option>
-  <option value="3">BIS Scheme-X Certification</option>
-  <option value="4">BIS Certificate of Conformity (CoC)</option>
-  <option value="5">BIS License For Toys</option>
-  <option value="6">Reach Certification (Global)</option>
-  <option value="7">Laboratory Recognition Scheme (LRS)</option>
-  <option value="8">World Manufacturer Identifier (WMI) Code</option>
-  <option value="9">BEE Registration</option>
-  <option value="10">BIS (CRS) Registration For Electronic Product</option>
-  <option value="11">E-Waste Management (EPR)</option>
-  <option value="12">WPC-ETA  Approval</option>
-  <option value="13">TEC/MTCTE Approval</option>
-  <option value="14">TAC & IMEI Registration</option>
-  <option value="15">MSME & NSIC Registration</option>
-  <option value="16">LMPC Registration</option>
-  <option value="17">Start-Up Registration</option>
-  <option value="18">Legal Metrology</option>
-  <option value="19">EMI-EMC Test</option>
-  <option value="20">RF Testing</option>
-  <option value="21">IP Rating Test</option>
-  <option value="22">NABL Testing</option>
-  <option value="23">LM 79 & LM 80</option>
-  <option value="24">ROHS Approval</option>
-  <option value="25">List of Equipments</option>
-</select>
-                                </div>
-
-                                <div class="form-col full-width">
-                                    <input type="text" placeholder="How Can We Help You?">
-                                </div>
-
-                                <div class="form-col">
-                                    <a href="#" class="btn btn-style-5">Submit Request</a>
-                                </div>
-
-                            </form>
-
-                        </div>
-                    </div>
-
+                <!-- widget -->
+                <div class="widget">
+                  <h5 class="widget-title">We accept</h5>
+                  <div class="pay-box">
+                    <a href="#"><img src="images/pay1.jpg" alt="" /></a>
+                    <a href="#"><img src="images/pay2.jpg" alt="" /></a>
+                    <a href="#"><img src="images/pay3.jpg" alt="" /></a>
+                    <a href="#"><img src="images/pay4.jpg" alt="" /></a>
+                  </div>
                 </div>
-
-            </div>
-<!-- Services Contact section End ------------------------ -->
-
-</div>
-<!-- Content End ------------------------ -->
-
-
-
-
-                    <!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
-
-        <footer id="footer" class="footer">
-
-            <div class="main-footer" data-bg="images/1920x556_bg1.jpg">
-
-                <div class="container">
-
-                    <div class="row flex-row">
-                        <div class="col-md-4 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Contact Us</h5>
-                                <div class="content-element3">
-                                    <p class="content-element1"><b>Office address:</b>  B-1/630, 2nd floor, Janakpuri, Delhi -58</p>
-                                    <p>
-                                       <b>Mobile:</b> +91 9999992605 <br><b>Telephone:</b> 011-40194697 <br><b>Phone : </b>  +91 9717929681 <br><b>E-mail:</b>  <a href="#" class="link-text">info@ssglobalservices.in</a>
-                                    </p>
-                                </div>
-
-                                <div class="brend-box">
-                                    <a href="#"><img src="images/brend-logo1.png" alt=""></a>
-                                    <a href="#"><img src="images/brend-logo2.png" alt=""></a>
-                                    <a href="#"><img src="images/brend-logo3.png" alt=""></a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Services</h5>
-                                <ul class="info-links">
-
-                                    <li><a href="#">BIS Approval</a></li>
-                                    <li><a href="#">EPR Certification</a></li>
-                                    <li><a href="#">WPC (ETA Approval)</a></li>
-                                    <li><a href="#">BEE Certification</a></li>
-                                    <li><a href="#">IMEI Certification</a></li>
-                                    <li><a href="#">ICAT Approval</a></li>
-                                    <li><a href="#">NOC Steel</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-2 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Quick Links</h5>
-                                <ul class="info-links">
-
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Special Offers</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">Follow Us</h5>
-                                <ul class="social-icons style-2">
-
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-linkedin-3"></i></a></li>
-                                    <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-                                    <li><a href="#"><i class="icon-instagram-5"></i></a></li>
-
-                                </ul>
-
-                            </div>
-
-                            <!-- widget -->
-                            <div class="widget">
-                                <h5 class="widget-title">We accept</h5>
-                                <div class="pay-box">
-                                    <a href="#"><img src="images/pay1.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay2.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay3.jpg" alt=""></a>
-                                    <a href="#"><img src="images/pay4.jpg" alt=""></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="copyright">
-                        <p>Copyright SSGlobalServices © 2025. All Rights Reserved.</p>
-                    </div>
-
-                </div>
-
+              </div>
             </div>
 
-        </footer>
+            <div class="copyright">
+              <p>Copyright SSGlobalServices © 2025. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-        <!-- - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
-
+      <!-- - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
     </div>
 
     <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
 
-        <!-- JS Libs & Plugins
+    <!-- JS Libs & Plugins
   ============================================ -->
 
-<!-- bootstrap javascript CDN  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- bootstrap javascript CDN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="js/libs/jquery.modernizr.js"></script>
     <!-- <script src="js/libs/jquery-2.2.4.min.js"></script> -->
@@ -418,13 +526,13 @@
     <!-- <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script> -->
     <script src="plugins/jquery.queryloader2.min.js"></script>
     <!-- <script src="plugins/owl.carousel.min.js"></script> -->
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-          <!-- JS theme files
+    <!-- JS theme files
   ============================================ -->
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
     <script src="js/header.js"></script>
-</body>
+  </body>
 </html>
