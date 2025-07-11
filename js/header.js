@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">About</a>
                     <div class="sub-menu-wrap">
                       <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="/about.html">About Us</a></li>
                         <li><a href="team.html">Our Team</a></li>
                         <li><a href="#">Achievements & Awards</a></li>
                         <li><a href="#">Association</a></li>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900%7COswald:200,300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- Basic Page Needs
+  ================================================== -->
+
+    <title>Gallery - SS Global Services</title>
+
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- bootstrap css 
+ =========================================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Vendor CSS
+  ============================================ -->
+
+    <link rel="stylesheet" href="font/demo-files/demo.css" />
+    <link rel="stylesheet" href="font/custom/styles.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
+
+    <!-- CSS theme files
+  ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Font Awesome 
+ ======================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+  <style>
+  
+    .news-filter-btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 15px;
+    }
+    .news-filter-btns .btn {
+      border: 2px solid #00aaff;
+      color: #00aaff;
+      padding: 10px 25px;
+      font-weight: 600;
+      background: #fff;
+      transition: all 0.3s ease;
+      border-radius: 0;
+    }
+    .news-filter-btns .btn:hover,
+    .news-filter-btns .btn.active {
+      background: linear-gradient(to right, #004b9b, #00aaff);
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 170, 255, 0.4);
+    }
+    .news-filter-btns .btn:first-child {
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    .news-filter-btns .btn:last-child {
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    .news-card {
+      animation: fadeInUp 0.6s ease both;
+    }
+    .news-card .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .news-card .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+    .news-card .card-img-top {
+      height: 180px;
+      object-fit: cover;
+    }
+    .news-card .btn-read {
+      background-color: #00aaff;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 14px;
+    }
+    .news-card .btn-read:hover {
+      background-color: #0077cc;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+    <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
+
+    <div id="wrapper" class="wrapper-container">
+      <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
+
+      <nav id="mobile-advanced" class="mobile-advanced"></nav>
+
+      <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
+      <div id="header-container"></div>
+
+      <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
+
+      <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+      <nav class="breadcrumbs-wrap style-3" aria-label="breadcrumb">
+        <div class="container">
+          <h1 class="page-title">News & Updates- SS Global Services</h1>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li aria-current="page">Image Gallery</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- - - - - - - - - - - - - end Breadcrumbs - - - - - - - - - - - - - - - -->
+
+      <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+<div class="container py-5">
+
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Latest News & Updates</h2>
+    <p class="text-muted">Stay informed with the latest certifications and industry developments.</p>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="text-center mb-5">
+    <div class="news-filter-btns" role="group" aria-label="Filter buttons">
+      <button class="btn active" data-filter="all">ALL</button>
+      <button class="btn" data-filter="bee">BEE CERTIFICATION</button>
+      <button class="btn" data-filter="bis">BIS CERTIFICATION</button>
+      <button class="btn" data-filter="epr">EPR CERTIFICATION</button>
+      <button class="btn" data-filter="wpc">WPC-ETA APPROVAL</button>
+      <button class="btn" data-filter="scheme-x">BIS SCHEME-X CERTIFICATION</button>
+      <button class="btn" data-filter="tec">TEC/MTCTE APPROVAL</button>
+      <button class="btn" data-filter="lmpc">LMPC CERTIFICATION</button>
+    </div>
+  </div>
+
+  <!-- News Cards Grid -->
+  <div class="row mt-5" id="news-container">
+    <div class="col-md-4 mb-4 news-card" data-category="bee">
+      <div class="card h-100">
+        <img src="images/bee-certification-services.jpg" class="card-img-top" alt="BEE Update">
+        <div class="card-body">
+          <h5 class="card-title">BEE Certification Update</h5>
+          <p class="card-text">New guidelines released for 2025 energy efficiency labeling standards.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="bis">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=BIS+News" class="card-img-top" alt="BIS News">
+        <div class="card-body">
+          <h5 class="card-title">BIS Certification News</h5>
+          <p class="card-text">Mobile devices must comply with new CRS standards by September.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="epr">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=EPR+Update" class="card-img-top" alt="EPR Update">
+        <div class="card-body">
+          <h5 class="card-title">EPR Guidelines</h5>
+          <p class="card-text">E-Waste collection targets revised for all major electronic brands.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="wpc">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=WPC+ETA+Update" class="card-img-top" alt="WPC ETA">
+        <div class="card-body">
+          <h5 class="card-title">WPC ETA Approval News</h5>
+          <p class="card-text">ETA process simplified for short range devices under new circular.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="scheme-x">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=Scheme+X+Notice" class="card-img-top" alt="Scheme X">
+        <div class="card-body">
+          <h5 class="card-title">Scheme-X Certification Expansion</h5>
+          <p class="card-text">New categories added under BIS Scheme-X for industrial electronics.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="tec">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=TEC+Update" class="card-img-top" alt="TEC Update">
+        <div class="card-body">
+          <h5 class="card-title">TEC/MTCTE Guidelines Update</h5>
+          <p class="card-text">Mandatory testing extended to include smart meters and routers.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 news-card" data-category="lmpc">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x180?text=LMPC+Labeling" class="card-img-top" alt="LMPC Update">
+        <div class="card-body">
+          <h5 class="card-title">LMPC Packaging Standards</h5>
+          <p class="card-text">Government revises weight declaration format on all imported goods.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- page section -->
+        <div class="page-section type2" id="client-carousel2">
+          <div class="container">
+            <div class="carousel-type-2">
+              <div
+                class="owl-carousel"
+                data-item-margin="30"
+                data-max-items="6"
+                data-autoplay="true"
+              >
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+
+                <div class="item-carousel">
+                  <!-- Carousel Item -->
+                  <a href="#"><img src="images/" alt="" /></a>
+                  <!-- /Carousel Item -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page section end -->
+      <!-- Content End ------------------------ -->
+
+      <!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+           <div id="footer-container"></div>
+
+      <!-- - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+    </div>
+
+    <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const filterButtons = document.querySelectorAll('[data-filter]');
+  const cards = document.querySelectorAll('.news-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      cards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
+
+
+    <!-- JS Libs & Plugins
+  ============================================ -->
+
+    <!-- bootstrap javascript CDN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/libs/jquery.modernizr.js"></script>
+    <!-- <script src="js/libs/jquery-2.2.4.min.js"></script> -->
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <!-- <script src="js/libs/retina.min.js"></script> -->
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js?ver=5.0"></script>
+    <!-- <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script> -->
+    <script src="plugins/jquery.queryloader2.min.js"></script>
+    <!-- <script src="plugins/owl.carousel.min.js"></script> -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JS theme files
+  ============================================ -->
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>
