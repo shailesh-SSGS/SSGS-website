@@ -52,6 +52,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
+        <!-- Animation Link ----------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Font Awesome 
  ======================= -->
     <link
@@ -72,8 +75,8 @@
       gap: 10px 15px;
     }
     .news-filter-btns .btn {
-      border: 2px solid #00aaff;
-      color: #00aaff;
+      border: 2px solid #1bb1f8;
+      color: #1bb1f8;
       padding: 10px 25px;
       font-weight: 600;
       background: #fff;
@@ -82,10 +85,10 @@
     }
     .news-filter-btns .btn:hover,
     .news-filter-btns .btn.active {
-      background: linear-gradient(to right, #004b9b, #00aaff);
+      background: linear-gradient(to right, #004e79, #1bb1f8) !important;
       color: #fff;
       border-color: #fff;
-      box-shadow: 0 8px 20px rgba(0, 170, 255, 0.4);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     }
     .news-filter-btns .btn:first-child {
       border-top-left-radius: 25px;
@@ -95,9 +98,9 @@
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
     }
-    .news-card {
+    /* .news-card {
       animation: fadeInUp 0.6s ease both;
-    }
+    } */
     .news-card .card {
       border: none;
       border-radius: 15px;
@@ -114,20 +117,20 @@
       object-fit: cover;
     }
     .news-card .btn-read {
-      background-color: #00aaff;
+      background-color: #004e79;
       color: #fff;
       font-weight: 600;
-      border-radius: 50px;
+      border-radius: 5px;
       padding: 6px 20px;
       font-size: 14px;
     }
     .news-card .btn-read:hover {
-      background-color: #0077cc;
+      background-color: #1bb1f8 !important;
     }
-    @keyframes fadeInUp {
+    /* @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
-    }
+    } */
     .hidden {
       display: none !important;
     }
@@ -166,19 +169,18 @@
 <div class="container py-5">
 
   <div class="text-center mb-5">
-    <h2 class="fw-bold">Latest News & Updates</h2>
-    <p class="text-muted">Stay informed with the latest certifications and industry developments.</p>
+    <h2 class="fw-bold" data-aos="fade-down">Latest News & Updates</h2>
+    <p class="text-muted" data-aos="fade-down">Stay informed with the latest certifications and industry developments.</p>
   </div>
 
   <!-- Filter Buttons -->
-  <div class="text-center mb-5">
+  <div class="text-center mb-5" data-aos="fade-up">
     <div class="news-filter-btns" role="group" aria-label="Filter buttons">
       <button class="btn active" data-filter="all">ALL</button>
       <button class="btn" data-filter="bee">BEE CERTIFICATION</button>
       <button class="btn" data-filter="bis">BIS CERTIFICATION</button>
       <button class="btn" data-filter="epr">EPR CERTIFICATION</button>
       <button class="btn" data-filter="wpc">WPC-ETA APPROVAL</button>
-      <button class="btn" data-filter="scheme-x">BIS SCHEME-X CERTIFICATION</button>
       <button class="btn" data-filter="tec">TEC/MTCTE APPROVAL</button>
       <button class="btn" data-filter="lmpc">LMPC CERTIFICATION</button>
     </div>
@@ -186,7 +188,7 @@
 
   <!-- News Cards Grid -->
   <div class="row mt-5" id="news-container">
-    <div class="col-md-4 mb-4 news-card" data-category="bee">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="bee">
       <div class="card h-100">
         <img src="images/bee-certification-services.jpg" class="card-img-top" alt="BEE Update">
         <div class="card-body">
@@ -197,9 +199,9 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="bis">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="bis">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=BIS+News" class="card-img-top" alt="BIS News">
+        <img src="images/BIS-CRS-Certification-services.jpg" class="card-img-top" alt="BIS News">
         <div class="card-body">
           <h5 class="card-title">BIS Certification News</h5>
           <p class="card-text">Mobile devices must comply with new CRS standards by September.</p>
@@ -208,9 +210,39 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="epr">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="epr">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=EPR+Update" class="card-img-top" alt="EPR Update">
+        <img src="images/EPR-BATTERY-Certification-services.jpg" class="card-img-top" alt="EPR Update">
+        <div class="card-body">
+          <h5 class="card-title">EPR Guidelines</h5>
+          <p class="card-text">E-Waste collection targets revised for all major electronic brands.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="epr">
+      <div class="card h-100">
+        <img src="images/EPR-E-WASTE-Certification-services.jpg" class="card-img-top" alt="EPR Update">
+        <div class="card-body">
+          <h5 class="card-title">EPR Guidelines</h5>
+          <p class="card-text">E-Waste collection targets revised for all major electronic brands.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="epr">
+      <div class="card h-100">
+        <img src="images/EPR-PLASTIC-Certification-services.jpg" class="card-img-top" alt="EPR Update">
+        <div class="card-body">
+          <h5 class="card-title">EPR Guidelines</h5>
+          <p class="card-text">E-Waste collection targets revised for all major electronic brands.</p>
+          <a href="#" class="btn btn-read mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="epr">
+      <div class="card h-100">
+        <img src="images/EPR-TYRE-Certification-services.jpg" class="card-img-top" alt="EPR Update">
         <div class="card-body">
           <h5 class="card-title">EPR Guidelines</h5>
           <p class="card-text">E-Waste collection targets revised for all major electronic brands.</p>
@@ -219,9 +251,9 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="wpc">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="wpc">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=WPC+ETA+Update" class="card-img-top" alt="WPC ETA">
+        <img src="images/WPC-ETA-Certification-services.jpg" class="card-img-top" alt="WPC ETA notification">
         <div class="card-body">
           <h5 class="card-title">WPC ETA Approval News</h5>
           <p class="card-text">ETA process simplified for short range devices under new circular.</p>
@@ -230,9 +262,9 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="scheme-x">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="bis">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=Scheme+X+Notice" class="card-img-top" alt="Scheme X">
+        <img src="images/BIS-CRS-Certification-services.jpg" class="card-img-top" alt="Scheme X">
         <div class="card-body">
           <h5 class="card-title">Scheme-X Certification Expansion</h5>
           <p class="card-text">New categories added under BIS Scheme-X for industrial electronics.</p>
@@ -241,9 +273,9 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="tec">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="tec">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=TEC+Update" class="card-img-top" alt="TEC Update">
+        <img src="images/TEC-Certification-services.jpg" class="card-img-top" alt="TEC Update">
         <div class="card-body">
           <h5 class="card-title">TEC/MTCTE Guidelines Update</h5>
           <p class="card-text">Mandatory testing extended to include smart meters and routers.</p>
@@ -252,9 +284,9 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4 news-card" data-category="lmpc">
+    <div class="col-md-4 mb-4 news-card" data-aos="fade-up" data-category="lmpc">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/400x180?text=LMPC+Labeling" class="card-img-top" alt="LMPC Update">
+        <img src="images/LMPC-Certification-services.jpg" class="card-img-top" alt="LMPC Update">
         <div class="card-body">
           <h5 class="card-title">LMPC Packaging Standards</h5>
           <p class="card-text">Government revises weight declaration format on all imported goods.</p>
@@ -361,16 +393,18 @@
     ></script>
 
     <script src="js/libs/jquery.modernizr.js"></script>
-    <!-- <script src="js/libs/jquery-2.2.4.min.js"></script> -->
     <script src="js/libs/jquery-ui.min.js"></script>
-    <!-- <script src="js/libs/retina.min.js"></script> -->
     <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
     <script src="plugins/revolution/js/jquery.themepunch.tools.min.js?ver=5.0"></script>
-    <!-- <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script> -->
     <script src="plugins/jquery.queryloader2.min.js"></script>
-    <!-- <script src="plugins/owl.carousel.min.js"></script> -->
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Animation JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
 
     <!-- JS theme files
   ============================================ -->

@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </ul>
               </div>
             </div>
-            <div class="col-md-4 col-xs-6 text-md-end">
+            <div class="col-md-4 col-xs-6 ">
               <div class="widget">
                 <h5 class="widget-title">Follow Us</h5>
                 <ul class="social-icons style-2">
