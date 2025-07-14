@@ -8387,12 +8387,11 @@ margin: 20px 0 5px 0;
     }
 
    .services-tab .search-input {
-      border: 2px solid #004e79;
       background: #f4fbff;
       border-radius: 8px;
       padding: 8px 12px;
       width: 80%;
-
+      border: 2px solid #777 !important;
     }
 
   .services-tab  .table td, .table th {
@@ -8701,6 +8700,7 @@ width: 45%;
       border-radius: 0.375rem; 
       padding: .375rem .75rem;
       border: 2px solid #dee2e6 !important;
+      /* height: 35px; */
     }
     #popupForm .row{
         margin-left: 0;
@@ -8714,26 +8714,44 @@ width: 45%;
     #popupForm .btn-submit {
       background-color: #004e79;
       color: white;
-      padding: 0.375rem 0.75rem;
+      padding: 0.375rem 2rem !important;
       text-transform: capitalize;
       transition: all 0.3s ease;
     }
   
     #popupForm .btn-submit:hover {
-      background-color: #1bb1f8;
+      background-color: #1bb1f8 !important;
       color: #fff;
       transform: scale(1.05);
     }
     #popupForm .form-image {
-      background: url('../images/Girl-hand-pointing.png') center center/cover no-repeat;
-      min-height: 100%;
+      margin: 20px 0;
+    }
+    #popupForm .form-image img{
+        width: 100%;
+        height: 100%;
+      border-radius: 15px;
+    }
+    .popup-heading{
+      background: #004e79;
+      color: white;
+      /* width: 100%; */
+      margin: 5px 15px;
+      padding: 2px 10px 2px 0 ;
+      border-radius: 2px;
+    }
+    .popup-heading .btn-close{
+        padding: 5px;
+        filter: invert(1); 
+        opacity: 1;
+        
     }
     #popupForm .modal-title {
       font-weight: 600;
-      color: #004e79;
       padding: 0.375rem 1rem;
       margin: 0;
-      font-size: 20px;
+      font-size: 1.2rem;
+      color: #fff;
     }
     #popupForm .form-label {
       font-weight: 500;
@@ -8847,6 +8865,10 @@ width: 45%;
       background: #fff;
       transition: all 0.3s ease;
       border-radius: 0;
+      /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); */
+     box-shadow:  0 4px 12px rgba(0, 0, 0, 0.15);
+      margin: 5px 0;
+
     }
     .news-filter-btns .btn:hover,
     .news-filter-btns .btn.active {
@@ -8884,10 +8906,11 @@ width: 45%;
     .news-card .btn-read {
       background-color: #004e79;
       color: #fff;
-      font-weight: 600;
+      font-weight: 400;
       border-radius: 5px;
-      padding: 6px 20px;
+      padding: 5px 20px;
       font-size: 14px;
+      text-transform: capitalize;
     }
     .news-card .btn-read:hover {
       background-color: #1bb1f8 !important;
@@ -8898,6 +8921,83 @@ width: 45%;
     } */
     .hidden {
       display: none !important;
+    }
+
+/* saperate news and update page ========================= */
+
+    .news-detail-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .news-detail-form {
+      flex: 1 1 300px;
+      max-width: 350px;
+      background: linear-gradient(to right, #004b9b, #00aaff);
+      color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 170, 255, 0.3);
+      height: fit-content;
+    }
+    .news-detail-form h3 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .news-detail-form .form-control {
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+      background: #ffffff;
+    }
+    .news-detail-form .btn {
+      background-color: #fff;
+      color: #00aaff;
+      font-weight: 600;
+      border-radius: 25px;
+      padding: 10px 25px;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+    .news-detail-form .btn:hover {
+      background-color: #004b9b;
+      color: #fff;
+    }
+    .news-detail-content {
+      flex: 1 1 600px;
+    }
+
+    .news-detail-meta {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .news-detail-body {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .news-image {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .pdf-frame {
+      width: 100%;
+      height: 700px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 992px) {
+      .news-detail-wrapper {
+        flex-direction: column;
+      }
+      .news-detail-form {
+        max-width: 100%;
+      }
     }
 
 

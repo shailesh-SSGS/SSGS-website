@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">Latest notification</a>
                     <div class="sub-menu-wrap">
                       <ul>
-                        <li><a href="news-updates.html">News & Update</a></li>
+                        <li><a href="/news-updates.html">News & Update</a></li>
                         <li><a href="#">Upcoming Events</a></li>
                         <li><a href="/blogs.html">Blogs</a></li>
                         <li><a href="#">Career</a></li>
