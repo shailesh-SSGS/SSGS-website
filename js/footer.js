@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const footerHTML = `
     <footer id="footer" class="footer">
-      <div class="main-footer" data-bg="images/1920x556_bg1.jpg">
+      <div class="main-footer" data-bg="/images/1920x556_bg1.jpg">
         <div class="container">
           <div class="row flex-row">
             <div class="col-md-4 col-xs-6 text-start">
@@ -9,23 +9,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h5 class="widget-title">Contact Us</h5>
                 <div class="content-element3">
                   <p class="content-element1">
-                    <strong>Office address:</strong> B-1/630, 2nd floor, Janakpuri, Delhi -58
+                    <strong>Office address:</strong> B-1/630, 2nd floor, Janakpuri East, Delhi, India -110058
                   </p>
                   <p>
+                  <div>
                     <strong>Phone:</strong>
-                    <a href="tel:+919999992605" class="link-text">+91 9999992605</a><br />
+                    <a href="tel:+919999992605" class="link-text">+91 9999992605</a>
+                    </div>
+                    <div>
                     <strong>Telephone:</strong>
-                    <a href="tel:011-40194697" class="link-text">011-40194697</a><br />
+                    <a href="tel:011-40194697" class="link-text">011-40194697</a>
+                    </div>
+                    <div>
                     <strong>WhatsApp: </strong>
-                    <a href="https://wa.me/919717929681" class="link-text">+91 9717929681</a><br />
+                    <a href="https://wa.me/919717929681" class="link-text">+91 9717929681</a>
+                    </div>
+                    <div>
                     <strong>E-mail:</strong>
                     <a href="mailto:info@ssglobalservices.in" class="link-text">info@ssglobalservices.in</a>
+                    </div>
                   </p>
                 </div>
                 <div class="brend-box">
-                  <a href="#"><img src="images/BIS-certification-logo.png" alt="" /></a>
-                  <a href="#"><img src="images/EPR-certification-logo.png" alt="" /></a>
-                  <a href="#"><img src="images/BEE-certification-logo.png" alt="" /></a>
+                  <a href="#"><img src="/images/BIS-certification-logo.png" alt="" /></a>
+                  <a href="#"><img src="/images/EPR-certification-logo.png" alt="" /></a>
+                  <a href="#"><img src="/images/BEE-certification-logo.png" alt="" /></a>
                 </div>
               </div>
             </div>
@@ -71,10 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="widget">
                 <h5 class="widget-title">We accept</h5>
                 <div class="pay-box">
-                  <a href="#"><img src="images/pay1.jpg" alt="" /></a>
-                  <a href="#"><img src="images/pay2.jpg" alt="" /></a>
-                  <a href="#"><img src="images/pay3.jpg" alt="" /></a>
-                  <a href="#"><img src="images/pay4.jpg" alt="" /></a>
+                  <a href="#"><img src="/images/pay1.jpg" alt="" /></a>
+                  <a href="#"><img src="/images/pay2.jpg" alt="" /></a>
+                  <a href="#"><img src="/images/pay3.jpg" alt="" /></a>
+                  <a href="#"><img src="/images/pay4.jpg" alt="" /></a>
                 </div>
               </div>
             </div>

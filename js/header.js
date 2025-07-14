@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="container">
             <div class="nav-item flex-row flex-justify flex-center">
               <div class="logo-wrap">
-                <a href="index.html" class="logo float-start p-0">
-                  <img src="images/logo.webp" style="max-height:90px;" alt="">
+                <a href="/index.html" class="logo float-start p-0">
+                  <img src="/images/logo.webp" style="max-height:90px;" alt="">
                 </a>
               </div>
               <nav id="main-navigation" class="main-navigation">
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">About</a>
                     <div class="sub-menu-wrap">
                       <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
                         <li><a href="#">Achievements & Awards</a></li>
                         <li><a href="#">Association</a></li>
                       </ul>
@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
                       <div class="mega-submenu">
                         <h5 class="mega-title">License & Certification</h5>
                         <ul>
-                          <li><a href="BIS-domestic-manufacturers.html">BIS (ISI Mark) for Domestic Manufacturers</a></li>
-                          <li><a href="BIS-foreign-manufacturers.html">BIS (ISI Mark) for Foreign Manufacturers</a></li>
-                          <li><a href="#">BIS Scheme-X Certification</a></li>
-                          <li><a href="#">BIS Certificate of Conformity (CoC)</a></li>
-                          <li><a href="#">BIS License For Toys</a></li>
-                          <li><a href="#">Reach Certification (Global)</a></li>
-                          <li><a href="#">Laboratory Recognition Scheme (LRS)</a></li>
-                          <li><a href="#">World Manufacturer Identifier (WMI) Code</a></li>
+                          <li><a href="/BIS-domestic-manufacturers.html">BIS (ISI Mark) for Domestic Manufacturers</a></li>
+                          <li><a href="/BIS-foreign-manufacturers.html">BIS (ISI Mark) for Foreign Manufacturers</a></li>
+                          <li><a href="/#">BIS Scheme-X Certification</a></li>
+                          <li><a href="/#">BIS Certificate of Conformity (CoC)</a></li>
+                          <li><a href="/#">BIS License For Toys</a></li>
+                          <li><a href="/#">Reach Certification (Global)</a></li>
+                          <li><a href="/#">Laboratory Recognition Scheme (LRS)</a></li>
+                          <li><a href="/#">World Manufacturer Identifier (WMI) Code</a></li>
                         </ul>
                       </div>
                       <div class="mega-submenu">
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <ul>
                         <li><a href="news-updates.html">News & Update</a></li>
                         <li><a href="#">Upcoming Events</a></li>
-                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
                         <li><a href="#">Career</a></li>
                       </ul>
                     </div>
@@ -107,9 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">Gallery</a>
                     <div class="sub-menu-wrap">
                       <ul>
-                        <li><a href="gallery.html">Image Gallery</a></li>
+                        <li><a href="/gallery.html">Image Gallery</a></li>
                         <li><a href="#">Video Gallery</a></li>
-                        <li><a href="international-audit.html">International Audit</a></li>
+                        <li><a href="/international-audit.html">International Audit</a></li>
                       </ul>
                     </div>
                   </li>
@@ -117,8 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">Contact Us</a>
                     <div class="sub-menu-wrap">
                       <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="feedback.html">Feedback/Concerns</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                        <li><a href="/feedback.html">Feedback/Concerns</a></li>
                       </ul>
                     </div>
                   </li>

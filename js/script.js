@@ -1150,29 +1150,39 @@ carousel.addEventListener("touchend", () => {
 
 //   popup form ------------------------
 
-  const popupForm = document.getElementById('popupForm');
-  const openFormBtn = document.getElementById('openFormBtn');
-  let hasOpened = false;
-
-   const formModal = new bootstrap.Modal(popupForm, {
+const popupForm = document.getElementById('popupForm');
+  const formModal = new bootstrap.Modal(popupForm, {
     backdrop: 'static',
     keyboard: false
   });
 
-  // Manual open
-  openFormBtn.addEventListener('click', function () {
-    hasOpened = true;
-    formModal.show();
+  let hasOpened = false;
+
+  // Handle all trigger buttons or links
+  document.querySelectorAll('.openFormBtn').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault(); // prevent scroll or reload
+      hasOpened = true;
+      formModal.show();
+    });
   });
 
-  // Auto-show the popup after 10 seconds, only if not opened manually
+  // Show only once per hour automatically
   window.addEventListener('DOMContentLoaded', function () {
-    setTimeout(function () {
-      if (!hasOpened) {
-        formModal.show();
-      }
-    }, 10000); // 10 seconds
+    const lastShown = localStorage.getItem('popupLastShown');
+    const now = Date.now();
+
+    if (!lastShown || now - lastShown > 60 * 60 * 1000) {
+      setTimeout(function () {
+        if (!hasOpened) {
+          formModal.show(); 
+          localStorage.setItem('popupLastShown', Date.now());
+        }
+      }, 10000); // 10 seconds delay
+    }
   });
+
+
 
 
   
