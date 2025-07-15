@@ -7483,8 +7483,9 @@ color: #ffdb3e;
 
 
 .newsoff{
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 600;
+    color: #fff;
 }
 .ticker-wrapper {
       background: #eee;
@@ -7496,7 +7497,17 @@ color: #ffdb3e;
     color: black;
     border: none;
     height: 60px;
+    }
+    
+    .blink-me {
+      animation: blinker 1.5s linear infinite;
+      color: #fff;
+    }
 
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
     }
 
     .ticker {
@@ -7504,11 +7515,13 @@ color: #ffdb3e;
       position: absolute;
       white-space: nowrap;
       will-change: transform;
-      animation: ticker 30s linear infinite;
+      animation: ticker 40s linear infinite;
       align-items: center;
       margin-top: 10px;
     }
-
+    .ticker:hover {
+  animation-play-state: paused;
+}
     .ticker a {
       display: flex;
       align-items: center;
@@ -7704,11 +7717,6 @@ color: #ffdb3e;
   margin-top: 30px;
 }
 
-}
-@media only screen and (max-width: 1200px){
-
-}.newsoff{
-    font-size: 13px;
 }
 
 
