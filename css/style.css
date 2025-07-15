@@ -7498,7 +7498,7 @@ color: #ffdb3e;
     border: none;
     height: 60px;
     }
-    
+
     .blink-me {
       animation: blinker 1.5s linear infinite;
       color: #fff;
@@ -7699,7 +7699,6 @@ color: #ffdb3e;
 
 
 #about-img img{
-
     width: 100%;
     margin-top: 100px;
     border-radius: 20px;
