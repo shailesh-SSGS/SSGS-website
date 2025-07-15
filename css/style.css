@@ -8532,7 +8532,7 @@ width: 45%;
     }
 
     .modal-img {
-      width: 80%;
+      width: 60%;
       height: auto;
     }
 
@@ -8915,10 +8915,6 @@ width: 45%;
     .news-card .btn-read:hover {
       background-color: #1bb1f8 !important;
     }
-    /* @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    } */
     .hidden {
       display: none !important;
     }
@@ -8949,6 +8945,7 @@ width: 45%;
       border-radius: 8px;
       border: none;
       margin-bottom: 15px;
+      padding: 7px 20px !important;
       background: #ffffff;
     }
     .news-detail-form .btn {
@@ -9001,7 +8998,7 @@ width: 45%;
     }
 
 
-    /* our team page ==================== */
+/* our team page ==================== */
 
     .ourteam-section {
       padding: 60px 0;
@@ -9082,4 +9079,83 @@ width: 45%;
 
     .ourteam-social a:hover {
       color: #004e79;
+    }
+
+
+
+    /* Associations page css ============================================ */
+
+    .ssgs-flip-box {
+      perspective: 1200px;
+      height: 300px;
+    }
+
+    .ssgs-flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1.5s ease;
+      transform: translateZ(0);
+    }
+
+    .ssgs-flip-box:hover .ssgs-flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    .ssgs-flip-box-front,
+    .ssgs-flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      backface-visibility: hidden;
+      background-color: #fff;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      transform-style: preserve-3d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .ssgs-flip-box-front {
+      transform: rotateY(0deg);
+      z-index: 2;
+      /* background: linear-gradient(to right, #004e7900 0%, #1bb1f833  100%);*/
+      /* background: linear-gradient(to right, #004e79 0%, #1bb1f8  100%); */
+      /* background: #1bb1f8; */
+    }
+
+    .ssgs-flip-box-front img {
+      width: 50%;
+      /* height: 100%; */
+      object-fit: cover;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .ssgs-flip-box-back {
+        -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: rotateY(180deg);
+  will-change: transform;
+      color: #fff;
+      background: linear-gradient(to right, #004e79 0%, #1bb1f8  100%);
+      flex-direction: column;
+    }
+     .ssgs-flip-box-back h5{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+     }
+     .ssgs-flip-box-back p{
+        color: #fff;
+     }
+
+    .ssgs-image-content-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
     }

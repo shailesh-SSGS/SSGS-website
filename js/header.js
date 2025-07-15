@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a href="/about.html">About Us</a></li>
                         <li><a href="/team.html">Our Team</a></li>
                         <li><a href="#">Achievements & Awards</a></li>
-                        <li><a href="#">Association</a></li>
+                        <li><a href="/associations.html">Association</a></li>
                       </ul>
                     </div>
                   </li>
@@ -142,21 +142,27 @@ document.addEventListener("DOMContentLoaded", function () {
     </header>
   `;
 
+  // Insert the header into the page
   document.getElementById("header-container").innerHTML = headerHTML;
 
-  const path = window.location.pathname.split("/").pop() || "index.html";
-  const navItems = document.querySelectorAll('#menu li');
+  // Wait until DOM updates with new header, then match current page
+  setTimeout(() => {
+    const path = window.location.pathname.split("/").pop() || "index.html";
+    const navItems = document.querySelectorAll('#menu li');
 
-  navItems.forEach(parentLi => {
-    const childLink = parentLi.querySelector("a");
-    if (!childLink) return;
-    const href = childLink.getAttribute("href");
-    if (href && path === href) {
-      parentLi.classList.add("current");
-      const grandParent = parentLi.closest(".dropdown");
-      if (grandParent && grandParent.tagName === "LI") {
-        grandParent.classList.add("current");
+    navItems.forEach(parentLi => {
+      const childLink = parentLi.querySelector("a");
+      if (!childLink) return;
+      const href = childLink.getAttribute("href").replace(/^\//, '');
+      const currentPath = path.replace(/^\//, '');
+
+      if (href && href === currentPath) {
+        parentLi.classList.add("current");
+        const grandParent = parentLi.closest("li.dropdown");
+        if (grandParent && grandParent !== parentLi) {
+          grandParent.classList.add("current");
+        }
       }
-    }
-  });
+    });
+  }, 10);
 });
