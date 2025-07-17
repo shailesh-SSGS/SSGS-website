@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
               <li><a href="mailto:contact@ssglobalservices.com"><i class="icon-email"> </i> info@ssglobalservices.in</a></li>
             </ul>
             <ul class="social-icons" id="pre-header-social-icons">
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-linkedin-3"></i></a></li>
-              <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-              <li><a href="#"><i class="icon-instagram-5"></i></a></li>
+              <li><a href="https://www.facebook.com/share/1Auq4pfYhL/" target="_blank"><i class="icon-facebook"></i></a></li>
+               
+              <li><a href="https://www.linkedin.com/company/ss-global-services/" target="_blank"><i class="icon-linkedin-3"></i></a></li>
+              <li><a href="https://www.youtube.com/@ssglobalservices7644" target="_blank"><i class="icon-youtube-play"></i></a></li>
+              <li><a href="https://www.instagram.com/ssglobalservices_?igsh=aXJiM3BwbzYyZTB5" target="_blank"><i class="icon-instagram-5"></i></a></li>
             </ul>
           </div>
         </div>
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a href="/news-updates.html">News & Update</a></li>
                         <li><a href="#">Upcoming Events</a></li>
                         <li><a href="/blogs.html">Blogs</a></li>
-                        <li><a href="#">Career</a></li>
+                        <li><a href="/career.html">Career</a></li>
                       </ul>
                     </div>
                   </li>

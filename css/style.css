@@ -3159,24 +3159,46 @@ font-weight: 600;
     box-shadow: 0 6px 10px -1px rgb(0 0 0 / 25%);
     border-radius: 8px;
     width: 90%;
-    padding: 10px 20px;
+    padding: 20px;
+    margin: 3rem 0;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+.contact-info li.info-item1 {
+    color: #222;
+    text-align: left;
+    display: flex;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 10px -1px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    width: 100%;
+    /* height: 120px; */
+    padding: 20px;
     /* margin: auto; */
+      margin: 10px 0;
+    align-items: center;
     transition: all 0.4s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {
     .contact-info li.info-item{
         width: 100%;
+        padding: 20px 20px;
     }
 }
 
-.contact-info li.info-item:hover{
+.contact-info li.info-item:hover, .contact-info li.info-item1:hover{
       transform: translateY(-5px);
 
 }
 
 .contact-info li.info-item>i {
     font-size: 30px;
+    padding-right: 15px;
+    color: #1bb1f8;
+}
+.contact-info li.info-item1>i{
+    font-size: 40px;
     padding-right: 15px;
     color: #1bb1f8;
 }
@@ -3195,7 +3217,7 @@ font-weight: 600;
 
 .contact-info li.info-item>.item-info span {
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: block;
     line-height: 18px;
     /* font-weight: normal; */
@@ -7361,6 +7383,12 @@ color: #ffdb3e;
     padding: 0;
     background: none;
 }
+.office-location .content-element1{
+  padding: 0 30px 0 0;
+}
+.address-title{
+    color: #ffdb3e;
+}
 
 [class*="footer"] .brend-box {
     margin: 0 -10px -10px;
@@ -7378,7 +7406,10 @@ color: #ffdb3e;
    border-radius: 10px;
    padding: 0 10px;
 }
-
+.company-logo{
+        width: 45%;
+    margin-top: -20px;
+}
 /* ----------------- Footer style-2 ---------------- */
 
 .footer.style-2 {
@@ -9182,3 +9213,123 @@ width: 45%;
       border-radius: 10px;
       box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
     }
+
+
+    /* Career page css =========================================== */
+        .ssgs-job-listing {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 25px;
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .ssgs-job-listing:hover {
+      transform: translateY(-5px);
+    }
+
+    .ssgs-job-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #004e79;
+    }
+
+    .ssgs-job-details {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      color: #666;
+    }
+
+    .ssgs-job-description {
+      margin-top: 10px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .ssgs-read-more-content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .ssgs-read-more-btn {
+      background: none;
+      border: none;
+      color: #1bb1f8;
+      cursor: pointer;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+
+    .ssgs-apply-btn {
+      margin-top: 15px;
+      display: inline-block;
+      background: #004e79;
+      color: white;
+      padding: 7px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .ssgs-apply-btn:hover {
+      background: #003a5a;
+    }
+
+    .ssgs-gender-options {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 6px;
+    }
+
+    .ssgs-submit-btn {
+      background: #004e79;
+      color: #fff;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .ssgs-submit-btn:hover {
+      background: #003455;
+    }
+
+    .modal-body {
+      padding: 30px 40px;
+    }
+         #applyModal{
+        margin-top: 10%;
+     }
+  #applyModal .modal-header{
+      background: linear-gradient(to right, #004e79 0%, #1bb1f8 100%);
+      padding: 10px 1 rem;
+  }
+  #applyModal .modal-header h4{
+      color: #fff;
+      margin-bottom: 0;
+      margin-left: 30px;
+      font-weight: 600;
+      /* font-size: 1.5rem; */
+  }
+   #applyModal .modal-body input.form-control,
+   #applyModal .modal-body textarea.form-control {
+      /* padding: 12px 16px; */
+      font-size: 14px;
+      color: #212529 !important;
+      border-radius: 6px;
+    }
+    #applyModal label{
+      color: #212529 !important;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+     #applyModal .btn-close{
+        filter: invert(1);
+        opacity: 1;
+     }
