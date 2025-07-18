@@ -6077,6 +6077,10 @@ iframe::scrollbar {
     line-height: 18px;
 }
 
+
+#what-we-do img{
+    width: 100%;
+}
 /* ------------------------------------------------------
 
       Comments
@@ -8805,7 +8809,7 @@ width: 45%;
 
 
 
-    /* internationa audit page 
+    /* international audit page 
     ======================================== */
 
     .audit-section .audit-entry{
@@ -8867,19 +8871,36 @@ width: 45%;
     }
 
    #modal-contents  .modal-header {
-      background: rgb(230, 247, 255);
+      background: linear-gradient(to right, #004e79 0%, #1bb1f8 100%);
       border-bottom: 1px solid #dee2e6;
     }
  #modal-contents .modal-header .modal-title{
-    color: #004e79;
+    color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
+    margin-left: 5%;
+    margin-bottom: 0;
 }
     #modal-contents .modal-body img {
-      width: 100%;
+      width: 80%;
       border-radius: 8px;
-      margin-bottom: 15px;
+      margin: 0 10% 15px 10%;
     }
+    #modal-contents .modal-body p{
+            text-align: center;
+        }
+
+        #modal-contents .btn-close{
+            filter: invert(1);
+            opacity: 1;
+        }
+
+     @media (max-width: 667px){
+        #modal-contents .modal-body img{
+         width: 100%;
+         margin: 0 0 15px 0;
+        }
+     }
 
     #modal-contents .modal-dialog {
       margin-top: auto;
@@ -8926,9 +8947,7 @@ width: 45%;
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
     }
-    /* .news-card {
-      animation: fadeInUp 0.6s ease both;
-    } */
+
     .news-card .card {
       border: none;
       border-radius: 15px;
@@ -8973,8 +8992,9 @@ width: 45%;
    .news-card .card-text{
     margin-bottom: 10px;
    }
-/* saperate news and update page ========================= */
 
+
+/* saperate news and update page ========================= */
     .news-detail-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -9072,6 +9092,69 @@ width: 45%;
       font-size: 36px;
     }
 
+.owner-section-wrapper{
+    transition: transform 0.3s ease;  
+}
+.owner-section-wrapper:hover{
+    transform: scale(1.02);
+}
+  .owner-section {
+    border-bottom: 2px solid #dce6f5;
+    margin: 2rem auto 10rem auto ;
+    border-radius: 20px;
+    background: linear-gradient(to right, #004e79 0%, #1bb1f8 100%);
+    
+  }
+
+.owner-details-design .ourteam-social i{
+    color: #fff;
+    transition: transform 0.3s ease;  
+}
+.owner-details-design .ourteam-social i:hover{
+    color: #ffd000;
+}
+  .owner-img-wrap img {
+    max-width: 250px;
+    transition: transform 0.3s ease;
+  }
+
+  .owner-img-wrap img:hover {
+    transform: scale(1.05);
+  }
+
+  .owner-name {
+    color: #fff;
+    margin-bottom: 0px !important;
+  }
+
+  .owner-title {
+    font-size: 1rem;
+    color: #ffd000;
+  }
+
+  .owner-quote {
+    font-size: 1rem;
+    color: #555;
+    color: #fff !important;
+  }
+
+  .owner-description {
+    font-size: 1rem;
+    color: #333;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .owner-description {
+      text-align: center;
+    }
+    .owner-name{
+        font-size: 1.5rem;
+    }
+     .owner-title {
+    font-size: 0.8rem;
+     }
+  }
     .ourteam-card {
       border: none;
       border-radius: 15px;
@@ -9333,3 +9416,71 @@ width: 45%;
         filter: invert(1);
         opacity: 1;
      }
+
+
+       .career-section-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #004e79;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .career-section-subtext {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+
+  .career-icon-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .career-icon-box:hover {
+    transform: translateY(-8px);
+  }
+
+  .career-icon-box i {
+    font-size: 2.5rem;
+    color: #1bb1f8;
+    margin-bottom: 15px;
+  }
+
+  .career-process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+  }
+  .career-process-step:hover {
+    box-shadow: 0 6px 10px -1px rgb(0 0 0 / 25%) ; 
+    border-radius: 20px;
+  }
+
+  .career-process-step span {
+    font-size: 2rem;
+    background: #1bb1f8;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+  }
+.career-process-step:hover span{
+    background: #004e79;
+}
+  .career-process-line {
+    width: 2px;
+    height: 50px;
+    background: #ccc;
+    margin: 0 auto;
+  }

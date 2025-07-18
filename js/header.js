@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                   </li>
                   <li class="dropdown">
-                    <a href="#">Latest notification</a>
+                    <a href="#">Latest Notification</a>
                     <div class="sub-menu-wrap">
                       <ul>
                         <li><a href="/news-updates.html">News & Update</a></li>
@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="sub-menu-wrap">
                       <ul>
                         <li><a href="/gallery.html">Image Gallery</a></li>
-                        <li><a href="#">Video Gallery</a></li>
                         <li><a href="/international-audit.html">International Audit</a></li>
                       </ul>
                     </div>
