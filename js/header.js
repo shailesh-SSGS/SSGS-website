@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <ul>
                         <li><a href="/about.html">About Us</a></li>
                         <li><a href="/team.html">Our Team</a></li>
-                        <li><a href="#">Achievements & Awards</a></li>
+                       
                         <li><a href="/associations.html">Association</a></li>
                       </ul>
                     </div>
