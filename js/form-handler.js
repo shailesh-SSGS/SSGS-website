@@ -85,4 +85,94 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   
+
+  // ========== 1. Inject Success Modal into DOM ==========
+const successModalHTML = `
+  <div id="ssgsSuccessModal" class="ssgs-modal-overlay">
+    <div class="ssgs-modal-content">
+      <h4>Thank you!</h4>
+      <p>Your request has been submitted successfully. Our team will contact you shortly.</p>
+      <button id="ssgsCloseModalBtn" class="btn btn-style-5">Close</button>
+    </div>
+  </div>
+`;
+document.body.insertAdjacentHTML("beforeend", successModalHTML);
+
+// ========== 2. Show & Auto-Close Modal ==========
+function showSuccessModal() {
+  const modal = document.getElementById("ssgsSuccessModal");
+  if (modal) {
+    modal.classList.add("show");
+    setTimeout(() => {
+      modal.classList.remove("show");
+    }, 5000);
+  }
+}
+
+// ========== 3. Close Modal on Button Click ==========
+document.body.addEventListener("click", function (e) {
+  if (e.target.id === "ssgsCloseModalBtn") {
+    const modal = document.getElementById("ssgsSuccessModal");
+    if (modal) modal.classList.remove("show");
+  }
 });
+
+// ========== 4. Request Service Form ==========
+const serviceForm = document.getElementById("service-request-form");
+if (serviceForm) {
+  serviceForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(serviceForm);
+
+    fetch("PHP/request_form_submit.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          serviceForm.reset();
+          showSuccessModal(); //  Show modal only here
+        } else {
+          alert(data.message || "Submission failed. Try again.");
+        }
+      })
+      .catch(() => {
+        alert("Something went wrong. Please try again later.");
+      });
+  });
+}
+
+// ========== 5. Contact Us Form ==========
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+
+    fetch("PHP/contact_form_submit.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          contactForm.reset();
+          showSuccessModal(); //  Show modal only here
+        } else {
+          alert(data.message || "Submission failed. Try again.");
+        }
+      })
+      .catch(() => {
+        alert("Something went wrong. Please try again later.");
+      });
+  });
+}
+
+
+
+
+});
+
+
+

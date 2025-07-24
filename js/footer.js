@@ -146,6 +146,30 @@ document.addEventListener("DOMContentLoaded", function () {
     </footer>
   `;
 
+  //  footer HTML and year
   document.getElementById("footer-container").innerHTML = footerHTML;
   document.getElementById("copyright-year").textContent = new Date().getFullYear();
+
+  // Success Modal HTML
+  const successModalHTML = `
+    <div id="ssgsSuccessModal" class="ssgs-modal-overlay" style="display: none;">
+      <div class="ssgs-modal-content">
+        <h4>Thank you!</h4>
+        <p>Your request has been submitted successfully. Our team will contact you shortly.</p>
+        <button id="ssgsCloseModalBtn" class="btn btn-style-5">Close</button>
+      </div>
+    </div>
+  `;
+
+  // Inject Success Modal into DOM
+  document.body.insertAdjacentHTML("beforeend", successModalHTML);
+
+  // Close Modal on Button Click
+  document.body.addEventListener("click", function (e) {
+    if (e.target.id === "ssgsCloseModalBtn") {
+      document.getElementById("ssgsSuccessModal").style.display = "none";
+    }
+  });
+
+
 });
