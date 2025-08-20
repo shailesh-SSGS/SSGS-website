@@ -8419,6 +8419,7 @@ margin: 20px 0 5px 0;
       text-align: center;
       background: #1bb1f8;
       color: #ffffff;
+      
     }
 
    .services-tab .search-wrapper {
@@ -8446,21 +8447,38 @@ margin: 20px 0 5px 0;
     width: 10%;
 }
 .services-tab #column-2{
-    width: 70%;
+    width: 50%;
 }
 .services-tab #column-3{
     width: 20%;
 }
-   .services-tab .table-striped > tbody > tr:nth-of-type(odd) {
+.services-tab #column-4{
+    width: 20%;
+}
+.services-tab #column-5{
+    width: 40%;
+}
+.services-tab .table-striped > tbody > tr:nth-of-type(odd) {
       background-color: #f2faff;
     }
 
   .services-tab  .scroll-frame {
       max-height: 600px;
       overflow-y: auto;
+      overflow-x: auto;
       margin-bottom: 30px;
       padding: 10px 0;
     }
+    .services-tab .table td{
+    font-size: 15px;
+}
+    .services-tab .table td a{
+    font-size: 16px;
+    color: #007bff;
+}
+    .services-tab .table td:hover a{    
+    color: #004e79;
+}
 
 /* table end ------------ */
 
@@ -8487,20 +8505,41 @@ width: 45%;
 }
 
 .services-tab #column-1{
-    width: 20%;
-    font-size: 14px;
+    width: 10%;
+    font-size: 12px;
 }
 .services-tab #column-2{
-    width: 50%; 
-    font-size: 14px;  
+    width: 40%; 
+    font-size: 12px;  
 }
 .services-tab #column-3{
-    width: 30%; 
-    font-size: 14px;   
+    width: 25%; 
+    font-size: 12px;   
+}
+.services-tab #column-4{
+    width: 25%; 
+    font-size: 12px;   
+}
+.services-tab #column-5{
+    width: 40%; 
+    font-size: 12px;   
 }
 .services-tab .table td{
+    font-size: 12px;
+}
+.services-tab .table td a{
     font-size: 14px;
 }
+  .third-schedule-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  }
+
+  .third-schedule-table table {
+    min-width: 700px;   /* ensures columns don’t squash */
+    table-layout: fixed;
+  }
+
 .services-tab .search-input{
     width: 100%;
 }

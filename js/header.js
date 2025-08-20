@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul>
                           <li><a href="/BIS-domestic-manufacturers.html">BIS (ISI Mark) for Domestic Manufacturers</a></li>
                           <li><a href="/BIS-foreign-manufacturers.html">BIS (ISI Mark) for Foreign Manufacturers</a></li>
-                          <li><a href="/#">BIS Scheme-X Certification</a></li>
+                          <li><a href="/bis-scheme-x-certification.html">BIS Scheme-X Certification</a></li>
                           <li><a href="/#">BIS Certificate of Conformity (CoC)</a></li>
                           <li><a href="/#">BIS License For Toys</a></li>
                           <li><a href="/#">Reach Certification (Global)</a></li>
