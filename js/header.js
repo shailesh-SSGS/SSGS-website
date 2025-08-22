@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul>
                           <li><a href="#">BEE Registration</a></li>
                           <li><a href="#">BIS (CRS) Registration For Electronic Product</a></li>
-                          <li><a href="#">EPR Registration for E-Waste</a></li>
+                          <li><a href="/epr-e-waste-certification.html">EPR Registration for E-Waste</a></li>
                           <li><a href="#">EPR Registration for Plastic Waste</a></li>
                           <li><a href="#">EPR Registration for Battery Waste</a></li>
                           <li><a href="#">EPR Registration for Tyre Waste</a></li>

@@ -8407,6 +8407,10 @@ margin: 20px 0 5px 0;
   transform: translateY(-15px);
 }
 
+.epr-documents-image{
+    width: 70%;
+    margin: auto;
+}
 
 /* Table content-------- */
 .services-tab .table thead {
