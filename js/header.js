@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
                       <div class="mega-submenu">
                         <h5 class="mega-title">License & Certification</h5>
                         <ul>
-                          <li><a href="/BIS-domestic-manufacturers.html">BIS (ISI Mark) for Domestic Manufacturers</a></li>
-                          <li><a href="/BIS-foreign-manufacturers.html">BIS (ISI Mark) for Foreign Manufacturers</a></li>
+                          <li><a href="/BIS-domestic-manufacturers.html">BIS Certification for Domestic Manufacturers (ISI Mark)</a></li>
+                          <li><a href="/BIS-foreign-manufacturers.html">BIS Certification (ISI Mark) for Foreign Manufacturers (FMCS)</a></li>
                           <li><a href="/bis-scheme-x-certification.html">BIS Scheme-X Certification</a></li>
                           <li><a href="/#">BIS Certificate of Conformity (CoC)</a></li>
                           <li><a href="/#">BIS License For Toys</a></li>
