@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           <li><a href="/BIS-domestic-manufacturers.html">BIS Certification for Domestic Manufacturers (ISI Mark)</a></li>
                           <li><a href="/BIS-foreign-manufacturers.html">BIS Certification (ISI Mark) for Foreign Manufacturers (FMCS)</a></li>
                           <li><a href="/bis-scheme-x-certification.html">BIS Scheme-X Certification</a></li>
-                          <li><a href="/#">BIS Certificate of Conformity (CoC)</a></li>
+                          <li><a href="#">BIS Certificate of Conformity (CoC)</a></li>
                           <li><a href="/#">BIS License For Toys</a></li>
                           <li><a href="/#">Reach Certification (Global)</a></li>
                           <li><a href="/#">Laboratory Recognition Scheme (LRS)</a></li>
@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h5 class="mega-title">Registrations</h5>
                         <ul>
                           <li><a href="#">BEE Registration</a></li>
-                          <li><a href="#">BIS (CRS) Registration For Electronic Product</a></li>
+                          <li><a href="/bis-crs-registration.html">BIS (CRS) Registration For Electronic Product</a></li>
                           <li><a href="/epr-e-waste-certification.html">EPR Registration for E-Waste</a></li>
-                          <li><a href="#">EPR Registration for Plastic Waste</a></li>
-                          <li><a href="#">EPR Registration for Battery Waste</a></li>
-                          <li><a href="#">EPR Registration for Tyre Waste</a></li>
+                          <li><a href="/epr-registration-for-Plastic-waste-management.html">EPR Registration for Plastic Waste</a></li>
+                          <li><a href="/epr-registration-for-battery-waste-management.html">EPR Registration for Battery Waste</a></li>
+                          <li><a href="/epr-registration-for-tyre-waste-management.html">EPR Registration for Tyre Waste</a></li>
                           <li><a href="#">WPC-ETA Approval</a></li>
                           <li><a href="#">BIS Scheme-X Certification</a></li>
                           <li><a href="#">TEC/MTCTE Approval</a></li>

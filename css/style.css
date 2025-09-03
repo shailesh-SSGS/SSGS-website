@@ -8484,6 +8484,42 @@ margin: 20px 0 5px 0;
     color: #004e79;
 }
 
+/* Read also boxes section ----------- */
+
+.ssgs-readalso-box {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  text-decoration: none;
+       color: #004e79;
+  transition: all 0.3s ease-in-out;
+  background: 
+    linear-gradient(#fff, #fff) padding-box, 
+    linear-gradient(90deg, #1bb1f8, #004e79) border-box;
+}
+
+.ssgs-readalso-box:hover {
+  background: linear-gradient(90deg, #1bb1f8, #004e79);
+  color: #fff;
+  border-color: #fff;
+}
+
+.ssgs-readalso-box.ssgs-active {
+  background: linear-gradient(90deg, #1bb1f8, #004e79);
+  color: #fff;
+  border-color: #fff;
+}
+.ssgs-readalso-box.ssgs-active:hover{
+    background: 
+    linear-gradient(#fff, #fff) padding-box, 
+    linear-gradient(90deg, #1bb1f8, #004e79) border-box;
+      border: 2px solid transparent;
+      color: #004e79;
+}
+
 /* table end ------------ */
 
 /* fee table --------------------- */
