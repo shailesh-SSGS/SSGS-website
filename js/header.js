@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <div class="mega-submenu">
                         <h5 class="mega-title">Registrations</h5>
                         <ul>
-                          <li><a href="#">BEE Registration</a></li>
+                          <li><a href="/bee-registration.html">BEE Registration</a></li>
                           <li><a href="/bis-crs-registration.html">BIS (CRS) Registration For Electronic Product</a></li>
                           <li><a href="/epr-e-waste-certification.html">EPR Registration for E-Waste</a></li>
                           <li><a href="/epr-registration-for-plastic-waste-management.html">EPR Registration for Plastic Waste</a></li>
